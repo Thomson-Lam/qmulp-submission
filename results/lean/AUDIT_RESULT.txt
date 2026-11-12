@@ -1,0 +1,237 @@
+QPPR.Manuscript.ConcreteLimit.proposition1_concrete.{u_1} {N : Type u_1} [Fintype N] [DecidableEq N] [Nonempty N]
+  (G : N → N → ℝ) (hG : QPPR.Manuscript.PhysicalWalk.Stochastic G) (v : N → ℝ) :
+  QPPR.Manuscript.proposition1_score_target
+    (fun x =>
+      QPPR.Core.evolve (QPPR.Manuscript.ConcreteSymmetry.recordedWalk G) x
+        (QPPR.Manuscript.ConcreteSymmetry.initial G v))
+    (QPPR.Manuscript.ConcreteLimit.phi G v)
+'QPPR.Manuscript.ConcreteLimit.proposition1_concrete' depends on axioms: [propext, Classical.choice, Quot.sound]
+QPPR.Manuscript.ConcreteLimit.proposition1_rate.{u_1} {N : Type u_1} [Fintype N] [DecidableEq N] [Nonempty N]
+  (G : N → N → ℝ) (hG : QPPR.Manuscript.PhysicalWalk.Stochastic G) (v : N → ℝ) (n : ℕ) (hn : 0 < n) :
+  ∑ j,
+      |QPPR.Manuscript.finiteSourceScore
+            (fun x =>
+              QPPR.Core.evolve (QPPR.Manuscript.ConcreteSymmetry.recordedWalk G) x
+                (QPPR.Manuscript.ConcreteSymmetry.initial G v))
+            n j -
+          QPPR.Manuscript.ConcreteLimit.limitScore G v j| ≤
+    QPPR.Manuscript.ConcreteLimit.errorConstant G v / ↑n
+'QPPR.Manuscript.ConcreteLimit.proposition1_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+QPPR.Manuscript.ConcreteLimit.destination_convergence.{u_1} {N : Type u_1} [Fintype N] [DecidableEq N] [Nonempty N]
+  (G : N → N → ℝ) (hG : QPPR.Manuscript.PhysicalWalk.Stochastic G) (v : N → ℝ) (j : N) :
+  Filter.Tendsto (fun n => QPPR.Manuscript.ConcreteLimit.finiteDestinationScore G v n j) Filter.atTop
+    (nhds (QPPR.Manuscript.ConcreteLimit.limitDestinationScore G v j))
+'QPPR.Manuscript.ConcreteLimit.destination_convergence' depends on axioms: [propext, Classical.choice, Quot.sound]
+QPPR.Manuscript.FiniteSpectrum.projector_fixes_eigenvector.{u_1} {J : Type u_1} [Fintype J] [DecidableEq J] [Nonempty J]
+  (T : Matrix J J ℂ) (hT : IsStarNormal T) (z : ↑(spectrum ℂ T)) (x : J → ℂ) (hx : T.mulVec x = ↑z • x) :
+  (QPPR.Manuscript.FiniteSpectrum.projector T ↑z).mulVec x = x
+'QPPR.Manuscript.FiniteSpectrum.projector_fixes_eigenvector' depends on axioms: [propext, Classical.choice, Quot.sound]
+QPPR.Manuscript.FiniteSpectrum.distinct_projectors_orthogonal.{u_1} {J : Type u_1} [Fintype J] [DecidableEq J]
+  [Nonempty J] (T : Matrix J J ℂ) (z w : ℂ) (hzw : z ≠ w) :
+  QPPR.Manuscript.FiniteSpectrum.projector T z * QPPR.Manuscript.FiniteSpectrum.projector T w = 0
+'QPPR.Manuscript.FiniteSpectrum.distinct_projectors_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+QPPR.Manuscript.UnitaryWalk.U_unitary.{u_1} {N : Type u_1} [Fintype N] [DecidableEq N] (G : N → N → ℝ)
+  (hG : QPPR.Manuscript.PhysicalWalk.Stochastic G) :
+  QPPR.Manuscript.UnitaryWalk.U G ∈ unitary (Matrix (N × N) (N × N) ℂ)
+'QPPR.Manuscript.UnitaryWalk.U_unitary' depends on axioms: [propext, Classical.choice, Quot.sound]
+QPPR.Manuscript.DiscriminantComputation.physical_discriminant.{u_1} {N : Type u_1} [Fintype N] [DecidableEq N]
+  (G : N → N → ℝ) :
+  (QPPR.Manuscript.UnitaryWalk.A G).conjTranspose * QPPR.Manuscript.UnitaryWalk.S * QPPR.Manuscript.UnitaryWalk.A G =
+    QPPR.Manuscript.DiscriminantComputation.K G
+'QPPR.Manuscript.DiscriminantComputation.physical_discriminant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+QPPR.Manuscript.DiscriminantComputation.discriminant_entries.{u_1} {N : Type u_1} [Fintype N] [DecidableEq N]
+  (G : N → N → ℝ) (hG : QPPR.Manuscript.PhysicalWalk.Stochastic G) (i j : N) :
+  QPPR.Manuscript.DiscriminantComputation.K G i j = ↑√(G i j * G j i)
+'QPPR.Manuscript.DiscriminantComputation.discriminant_entries' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+QPPR.Manuscript.DiscriminantComputation.evolution_from_discriminant_eigendecomposition.{u_1} {N : Type u_1} [Fintype N]
+  [DecidableEq N] (G : N → N → ℝ) (hG : QPPR.Manuscript.PhysicalWalk.Stochastic G) (v : N → ℝ) (t : ℕ) :
+  QPPR.Core.evolve (QPPR.Manuscript.ConcreteSymmetry.recordedWalk G) t (QPPR.Manuscript.ConcreteSymmetry.initial G v) =
+    QPPR.Manuscript.PhysicalWalk.pairState G
+      (QPPR.EC2.embedPair (↑(QPPR.Manuscript.DiscriminantComputation.Q G)).mulVecLin
+        (QPPR.Core.evolve
+          (QPPR.EC2.recordedCoefficientStep (QPPR.Manuscript.DiscriminantComputation.diagonal G).mulVecLin) t
+          (QPPR.Manuscript.DiscriminantComputation.initialCoordinates G v, 0)))
+'QPPR.Manuscript.DiscriminantComputation.evolution_from_discriminant_eigendecomposition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+QPPR.Manuscript.PhysicalQuotient.proposition2_concrete_time.{u_1, u_2} {N : Type u_1} {R : Type u_2} [Fintype N]
+  [Fintype R] [DecidableEq R] (c : N → R) (hc : Function.Surjective c) (G : N → N → ℝ) (Gb : R → R → ℝ) (v : N → ℝ)
+  (hG : QPPR.Manuscript.PhysicalWalk.Stochastic G) (hGb : QPPR.Manuscript.PhysicalWalk.Stochastic Gb)
+  (hL : QPPR.Manuscript.PhysicalQuotient.Lumpable c G Gb)
+  (hD :
+    ∀ (z : R → ℂ),
+      (QPPR.Manuscript.PhysicalWalk.D G)
+          ((QPPR.Manuscript.PhysicalQuotient.embedding c (QPPR.Manuscript.PhysicalQuotient.weight c)) z) =
+        (QPPR.Manuscript.PhysicalQuotient.embedding c (QPPR.Manuscript.PhysicalQuotient.weight c))
+          ((QPPR.Manuscript.PhysicalWalk.D Gb) z))
+  (hconst : ∀ (i j : N), c i = c j → v i = v j) :
+  QPPR.Manuscript.proposition2_measured_target (QPPR.Manuscript.PhysicalQuotient.fiber c)
+    (fun x =>
+      QPPR.Core.evolve (QPPR.Manuscript.ConcreteSymmetry.recordedWalk G) x
+        (QPPR.Manuscript.ConcreteSymmetry.initial G v))
+    fun x =>
+    QPPR.Core.evolve (QPPR.Manuscript.ConcreteSymmetry.recordedWalk Gb) x
+      (QPPR.Manuscript.ConcreteSymmetry.initial Gb (QPPR.Manuscript.PhysicalQuotient.aggregate c v))
+'QPPR.Manuscript.PhysicalQuotient.proposition2_concrete_time' depends on axioms: [propext, Classical.choice, Quot.sound]
+QPPR.Manuscript.CompletePropositions.quotient_stochastic.{u_1, u_2} {N : Type u_1} {R : Type u_2} [Fintype N]
+  [Fintype R] [DecidableEq N] [DecidableEq R] (c : N → R) (hc : Function.Surjective c) (G : N → N → ℝ) (Gb : R → R → ℝ)
+  (hG : QPPR.Manuscript.PhysicalWalk.Stochastic G) (hL : QPPR.Manuscript.PhysicalQuotient.Lumpable c G Gb) :
+  QPPR.Manuscript.PhysicalWalk.Stochastic Gb
+'QPPR.Manuscript.CompletePropositions.quotient_stochastic' depends on axioms: [propext, Classical.choice, Quot.sound]
+QPPR.Manuscript.CompletePropositions.proposition2_finite.{u_1, u_2} {N : Type u_1} {R : Type u_2} [Fintype N]
+  [Fintype R] [DecidableEq N] [DecidableEq R] (c : N → R) (hc : Function.Surjective c) (G : N → N → ℝ) (Gb : R → R → ℝ)
+  (v : N → ℝ) (hG : QPPR.Manuscript.PhysicalWalk.Stochastic G) (hL : QPPR.Manuscript.PhysicalQuotient.Lumpable c G Gb)
+  (hD :
+    ∀ (z : R → ℂ),
+      (QPPR.Manuscript.PhysicalWalk.D G)
+          ((QPPR.Manuscript.PhysicalQuotient.embedding c (QPPR.Manuscript.PhysicalQuotient.weight c)) z) =
+        (QPPR.Manuscript.PhysicalQuotient.embedding c (QPPR.Manuscript.PhysicalQuotient.weight c))
+          ((QPPR.Manuscript.PhysicalWalk.D Gb) z))
+  (hconst : ∀ (i j : N), c i = c j → v i = v j) (n : ℕ) (a : R) :
+  QPPR.Manuscript.PhysicalQuotient.aggregate c
+        (QPPR.Manuscript.finiteSourceScore
+          (fun x =>
+            QPPR.Core.evolve (QPPR.Manuscript.ConcreteSymmetry.recordedWalk G) x
+              (QPPR.Manuscript.ConcreteSymmetry.initial G v))
+          n)
+        a =
+      QPPR.Manuscript.finiteSourceScore
+        (fun x =>
+          QPPR.Core.evolve (QPPR.Manuscript.ConcreteSymmetry.recordedWalk Gb) x
+            (QPPR.Manuscript.ConcreteSymmetry.initial Gb (QPPR.Manuscript.PhysicalQuotient.aggregate c v)))
+        n a ∧
+    QPPR.Manuscript.PhysicalQuotient.aggregate c
+        (fun j =>
+          (∑ t ∈ Finset.range n,
+              QPPR.Manuscript.destinationProbability
+                (QPPR.Core.evolve (QPPR.Manuscript.ConcreteSymmetry.recordedWalk G) t
+                  (QPPR.Manuscript.ConcreteSymmetry.initial G v))
+                j) /
+            ↑n)
+        a =
+      (∑ t ∈ Finset.range n,
+          QPPR.Manuscript.destinationProbability
+            (QPPR.Core.evolve (QPPR.Manuscript.ConcreteSymmetry.recordedWalk Gb) t
+              (QPPR.Manuscript.ConcreteSymmetry.initial Gb (QPPR.Manuscript.PhysicalQuotient.aggregate c v)))
+            a) /
+        ↑n
+'QPPR.Manuscript.CompletePropositions.proposition2_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+QPPR.Manuscript.CompletePropositions.proposition2_limiting.{u_1, u_2} {N : Type u_1} {R : Type u_2} [Fintype N]
+  [Fintype R] [DecidableEq N] [DecidableEq R] [Nonempty N] [Nonempty R] (c : N → R) (hc : Function.Surjective c)
+  (G : N → N → ℝ) (Gb : R → R → ℝ) (v : N → ℝ) (hG : QPPR.Manuscript.PhysicalWalk.Stochastic G)
+  (hL : QPPR.Manuscript.PhysicalQuotient.Lumpable c G Gb)
+  (hD :
+    ∀ (z : R → ℂ),
+      (QPPR.Manuscript.PhysicalWalk.D G)
+          ((QPPR.Manuscript.PhysicalQuotient.embedding c (QPPR.Manuscript.PhysicalQuotient.weight c)) z) =
+        (QPPR.Manuscript.PhysicalQuotient.embedding c (QPPR.Manuscript.PhysicalQuotient.weight c))
+          ((QPPR.Manuscript.PhysicalWalk.D Gb) z))
+  (hconst : ∀ (i j : N), c i = c j → v i = v j) (a : R) :
+  QPPR.Manuscript.PhysicalQuotient.aggregate c (QPPR.Manuscript.ConcreteLimit.limitScore G v) a =
+      QPPR.Manuscript.ConcreteLimit.limitScore Gb (QPPR.Manuscript.PhysicalQuotient.aggregate c v) a ∧
+    QPPR.Manuscript.PhysicalQuotient.aggregate c (QPPR.Manuscript.ConcreteLimit.limitDestinationScore G v) a =
+      QPPR.Manuscript.ConcreteLimit.limitDestinationScore Gb (QPPR.Manuscript.PhysicalQuotient.aggregate c v) a
+'QPPR.Manuscript.CompletePropositions.proposition2_limiting' depends on axioms: [propext, Classical.choice, Quot.sound]
+QPPR.Manuscript.CompletePropositions.proposition2_member_time.{u_1, u_2} {N : Type u_1} {R : Type u_2} [Fintype N]
+  [Fintype R] [DecidableEq N] [DecidableEq R] (c : N → R) (G : N → N → ℝ) (v : N → ℝ)
+  (htrans : QPPR.Manuscript.CompletePropositions.ExchangeTransitive c G v) (t : ℕ) (i : N) :
+  QPPR.Manuscript.sourceProbability
+      (QPPR.Core.evolve (QPPR.Manuscript.ConcreteSymmetry.recordedWalk G) t
+        (QPPR.Manuscript.ConcreteSymmetry.initial G v))
+      i =
+    QPPR.Manuscript.PhysicalQuotient.aggregate c
+        (QPPR.Manuscript.sourceProbability
+          (QPPR.Core.evolve (QPPR.Manuscript.ConcreteSymmetry.recordedWalk G) t
+            (QPPR.Manuscript.ConcreteSymmetry.initial G v)))
+        (c i) /
+      ↑(QPPR.Manuscript.PhysicalQuotient.fiber c (c i)).card
+'QPPR.Manuscript.CompletePropositions.proposition2_member_time' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+QPPR.Manuscript.CompletePropositions.proposition2_member_finite.{u_1, u_2} {N : Type u_1} {R : Type u_2} [Fintype N]
+  [Fintype R] [DecidableEq N] [DecidableEq R] (c : N → R) (G : N → N → ℝ) (v : N → ℝ)
+  (htrans : QPPR.Manuscript.CompletePropositions.ExchangeTransitive c G v) (n : ℕ) (i : N) :
+  QPPR.Manuscript.finiteSourceScore
+      (fun x =>
+        QPPR.Core.evolve (QPPR.Manuscript.ConcreteSymmetry.recordedWalk G) x
+          (QPPR.Manuscript.ConcreteSymmetry.initial G v))
+      n i =
+    QPPR.Manuscript.PhysicalQuotient.aggregate c
+        (QPPR.Manuscript.finiteSourceScore
+          (fun x =>
+            QPPR.Core.evolve (QPPR.Manuscript.ConcreteSymmetry.recordedWalk G) x
+              (QPPR.Manuscript.ConcreteSymmetry.initial G v))
+          n)
+        (c i) /
+      ↑(QPPR.Manuscript.PhysicalQuotient.fiber c (c i)).card
+'QPPR.Manuscript.CompletePropositions.proposition2_member_finite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+QPPR.Manuscript.CompletePropositions.proposition2_member_limiting.{u_1, u_2} {N : Type u_1} {R : Type u_2} [Fintype N]
+  [Fintype R] [DecidableEq N] [DecidableEq R] [Nonempty N] (c : N → R) (G : N → N → ℝ)
+  (hG : QPPR.Manuscript.PhysicalWalk.Stochastic G) (v : N → ℝ)
+  (htrans : QPPR.Manuscript.CompletePropositions.ExchangeTransitive c G v) (i : N) :
+  QPPR.Manuscript.ConcreteLimit.limitScore G v i =
+    QPPR.Manuscript.PhysicalQuotient.aggregate c (QPPR.Manuscript.ConcreteLimit.limitScore G v) (c i) /
+      ↑(QPPR.Manuscript.PhysicalQuotient.fiber c (c i)).card
+'QPPR.Manuscript.CompletePropositions.proposition2_member_limiting' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+QPPR.Manuscript.ClassicalLimit.classical_cesaro_exists.{u_1} {N : Type u_1} [Fintype N] (G : N → N → ℝ)
+  (hG : QPPR.Manuscript.PhysicalWalk.Stochastic G) (v : N → ℝ) :
+  ∃ p, ∀ (j : N), Filter.Tendsto (fun n => QPPR.Manuscript.ClassicalLimit.finiteScore G v n j) Filter.atTop (nhds (p j))
+'QPPR.Manuscript.ClassicalLimit.classical_cesaro_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+QPPR.Manuscript.CompletePropositions.proposition3_complete.{u_1} {N : Type u_1} [Fintype N] [DecidableEq N] [Nonempty N]
+  (G : N → N → ℝ) (hG : QPPR.Manuscript.PhysicalWalk.Stochastic G) (v : N → ℝ) (q : Equiv.Perm N)
+  (hex : ∀ (i j : N), G (q i) (q j) = G i j) (hv : ∀ (i : N), v (q i) = v i) :
+  (∀ (j : N),
+      QPPR.Manuscript.proposition3_time_target
+        (fun x =>
+          QPPR.Core.evolve (QPPR.Manuscript.ConcreteSymmetry.recordedWalk G) x
+            (QPPR.Manuscript.ConcreteSymmetry.initial G v))
+        (fun x => QPPR.Core.evolve (QPPR.Manuscript.ConcreteSymmetry.classicalStep G) x v) j (q j)) ∧
+    (∀ (n : ℕ) (j : N),
+        QPPR.Manuscript.finiteSourceScore
+            (fun x =>
+              QPPR.Core.evolve (QPPR.Manuscript.ConcreteSymmetry.recordedWalk G) x
+                (QPPR.Manuscript.ConcreteSymmetry.initial G v))
+            n j =
+          QPPR.Manuscript.finiteSourceScore
+            (fun x =>
+              QPPR.Core.evolve (QPPR.Manuscript.ConcreteSymmetry.recordedWalk G) x
+                (QPPR.Manuscript.ConcreteSymmetry.initial G v))
+            n (q j)) ∧
+      (∀ (j : N),
+          Filter.Tendsto
+            (fun n =>
+              QPPR.Manuscript.finiteSourceScore
+                (fun x =>
+                  QPPR.Core.evolve (QPPR.Manuscript.ConcreteSymmetry.recordedWalk G) x
+                    (QPPR.Manuscript.ConcreteSymmetry.initial G v))
+                n j)
+            Filter.atTop (nhds (QPPR.Manuscript.ConcreteLimit.limitScore G v j))) ∧
+        (∀ (j : N),
+            QPPR.Manuscript.ConcreteLimit.limitScore G v j = QPPR.Manuscript.ConcreteLimit.limitScore G v (q j)) ∧
+          ∃ p,
+            (∀ (j : N),
+                Filter.Tendsto (fun n => QPPR.Manuscript.ClassicalLimit.finiteScore G v n j) Filter.atTop
+                  (nhds (p j))) ∧
+              (∀ (n : ℕ) (j : N),
+                  QPPR.Manuscript.ClassicalLimit.finiteScore G v n j =
+                    QPPR.Manuscript.ClassicalLimit.finiteScore G v n (q j)) ∧
+                ∀ (j : N), p j = p (q j)
+'QPPR.Manuscript.CompletePropositions.proposition3_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+QPPR.Manuscript.CompletePropositions.proposition1_discriminant.{u_1} {N : Type u_1} [Fintype N] [DecidableEq N]
+  [Nonempty N] (G : N → N → ℝ) (hG : QPPR.Manuscript.PhysicalWalk.Stochastic G) (v : N → ℝ) :
+  QPPR.Manuscript.proposition1_score_target (QPPR.Manuscript.CompletePropositions.discriminantTrajectory G v)
+    (QPPR.Manuscript.ConcreteLimit.phi G v)
+'QPPR.Manuscript.CompletePropositions.proposition1_discriminant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+AXIOM AUDIT PASSED: 19 theorems; only propext, Classical.choice and Quot.sound.

@@ -122,7 +122,9 @@ The code combines both cohorts while retaining a temporal split: March 2023 supp
 
 For each dataset, the data stage writes a bootstrap index matrix. Each row identifies sampled test borrowers, with default and non-default counts preserved. This sampling rule is outcome stratification.
 
-The stage also writes `observation_flags.csv`, which records missing-category status, and `T1_data.csv`, which summarizes the data. Its manifest records the run details. It compares observed counts with expected counts and reports differences.
+The stage writes `observation_flags.csv` for missing-category status and `T1_data.csv` for data summaries. Its manifest records run details and summary-count differences.
+HMEQ cleaning raises an error if retained-row, split, or default counts differ from its recorded expectations.
+Both datasets also reject unexpected category counts. Those checks stop the stage rather than only reporting a difference.
 
 ### Stage 02 builds networks
 

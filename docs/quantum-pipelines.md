@@ -1,6 +1,6 @@
 # Quantum pipelines
 
-This guide covers the quantum score, evaluation, mechanism studies, local circuit simulation, and manuscript outputs. Paths are relative to `sub-qmulp/`. The experiments compare scores from the same operator, a matrix that determines how probability moves between network nodes. Reference borrowers are development-set borrowers whose defaults supply restart probability. Evaluation borrowers' outcomes are hidden when the operator is built. They do not establish quantum speedup or improved prediction.
+This guide covers the quantum score, evaluation, mechanism studies, local circuit simulation, and manuscript outputs. Paths are relative to `sub-qmulp/`. The experiments compare scores from the same operator, a matrix that determines how probability moves between network nodes. Reference borrowers are development-set borrowers whose defaults supply restart probability. Evaluation borrowers' outcomes are hidden when the operator is built. The recorded smoke checks do not establish quantum speedup or improved prediction.
 
 ## Reproduce the quantum stages
 
@@ -27,7 +27,7 @@ The command runs a reduced experiment to check that the code executes:
 - A borrower class groups borrowers with the same category in each network layer and the same label after evaluation labels are hidden. Missing categories also affect grouping.
 - The simulator tests smaller networks that retain six or four borrower classes. It also includes a candidate containing every class in the grouped network.
 
-Each simulation case combines a candidate network, a recorded length, and a noise setting. The code skips cases that exceed its configured size, memory, or estimated runtime limits. 
+Each simulation case combines a candidate network, a recorded length, and a noise setting. The code skips cases that exceed its configured size, memory, or estimated runtime limits.
 
 A row marked `not simulated: resource budget` records a skipped case, not a completed simulation. Inspect the `status` column in `results/outputs/results/hmeq/EC_noise_grid.csv` for details after running the commands.
 
@@ -133,7 +133,7 @@ A reference class with at least two members and a dangling copy can fail compati
 
 `src/quantum/mechanism/convergence.py` checks horizons 1 through 1,000, then every tenth step through 10,000, then every hundredth step to `tau_max`. It includes the cap itself.
 
-`tau*` is the first grid point after which all remaining grid points satisfy three criteria. Default thresholds are L1 distance at most 0.01, test-borrower Spearman at least 0.99, and expected top-k overlap within 0.01 of self-overlap. L1 measures probability differences across network nodes. Spearman correlation measures agreement between borrower rankings. Expected top-k overlap measures shared membership among the `k` highest-scoring borrowers, accounting for tied scores.
+`tau*` is the first grid point after which all remaining grid points satisfy three criteria. Default thresholds are L1 distance at most 0.01, test-borrower Spearman at least 0.99, and expected top-k overlap at least self-overlap minus 0.01. L1 measures probability differences across network nodes. Spearman correlation measures agreement between borrower rankings. Expected top-k overlap measures shared membership among the `k` highest-scoring borrowers, accounting for tied scores.
 
 Self-overlap compares a ranking with itself under the same tie rule. It provides the overlap ceiling when ties prevent a unique top-k set. The valid tail must contain at least 20 grid points. A tail is the sequence from the candidate convergence point through the final checked point.
 

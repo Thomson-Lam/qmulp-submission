@@ -1,0 +1,1216 @@
+Clean source build. No project .olean files were copied. Dependencies reused at their pinned revisions.
+
+Target 1/37: QPPR.Core.Imports
+✔ [1835/1835] Built QPPR.Core.Imports (1.4s)
+Build completed successfully (1835 jobs).
+
+Target 2/37: QPPR.Core.Evolution
+✔ [1836/1836] Built QPPR.Core.Evolution (1.5s)
+Build completed successfully (1836 jobs).
+
+Target 3/37: QPPR.Core.RealSequenceLimits
+✔ [1836/1836] Built QPPR.Core.RealSequenceLimits (1.6s)
+Build completed successfully (1836 jobs).
+
+Target 4/37: QPPR.EC1.GeometricAverage
+✔ [1836/1836] Built QPPR.EC1.GeometricAverage (1.7s)
+Build completed successfully (1836 jobs).
+
+Target 5/37: QPPR.EC1.GeometricAverageExtra
+✔ [1837/1837] Built QPPR.EC1.GeometricAverageExtra (1.5s)
+Build completed successfully (1837 jobs).
+
+Target 6/37: QPPR.EC1.SpectralEvolution
+✔ [1837/1837] Built QPPR.EC1.SpectralEvolution (1.8s)
+Build completed successfully (1837 jobs).
+
+Target 7/37: QPPR.EC1.RankStability
+✔ [1836/1836] Built QPPR.EC1.RankStability (1.5s)
+Build completed successfully (1836 jobs).
+
+Target 8/37: QPPR.EC1.DiscriminantMode
+✔ [1836/1836] Built QPPR.EC1.DiscriminantMode (1.6s)
+Build completed successfully (1836 jobs).
+
+Target 9/37: QPPR.EC1.MeasuredMarginals
+✔ [1836/1836] Built QPPR.EC1.MeasuredMarginals (1.7s)
+Build completed successfully (1836 jobs).
+
+Target 10/37: QPPR.EC2.Intertwining
+✔ [1837/1837] Built QPPR.EC2.Intertwining (1.7s)
+Build completed successfully (1837 jobs).
+
+Target 11/37: QPPR.EC2.DiscriminantIntertwining
+✔ [1838/1838] Built QPPR.EC2.DiscriminantIntertwining (1.9s)
+Build completed successfully (1838 jobs).
+
+Target 12/37: QPPR.EC2.ClassicalLumpability
+✔ [1837/1837] Built QPPR.EC2.ClassicalLumpability (1.6s)
+Build completed successfully (1837 jobs).
+
+Target 13/37: QPPR.EC2.QuotientScores
+✔ [1839/1839] Built QPPR.EC2.QuotientScores (1.8s)
+Build completed successfully (1839 jobs).
+
+Target 14/37: QPPR.EC3.Symmetry
+✔ [1837/1837] Built QPPR.EC3.Symmetry (1.7s)
+Build completed successfully (1837 jobs).
+
+Target 15/37: QPPR.EC3.DiscriminantSymmetry
+✔ [1840/1840] Built QPPR.EC3.DiscriminantSymmetry (1.7s)
+Build completed successfully (1840 jobs).
+
+Target 16/37: QPPR.EC3.ClassicalSymmetry
+✔ [1838/1838] Built QPPR.EC3.ClassicalSymmetry (1.8s)
+Build completed successfully (1838 jobs).
+
+Target 17/37: QPPR.EC3.LimitSymmetry
+✔ [1843/1843] Built QPPR.EC3.LimitSymmetry (1.5s)
+Build completed successfully (1843 jobs).
+
+Target 18/37: QPPR.EC4.ExpectedOverlap
+✔ [1836/1836] Built QPPR.EC4.ExpectedOverlap (1.8s)
+Build completed successfully (1836 jobs).
+
+Target 19/37: QPPR.Manuscript.DiscriminantKernel
+✔ [1836/1836] Built QPPR.Manuscript.DiscriminantKernel (1.5s)
+Build completed successfully (1836 jobs).
+
+Target 20/37: QPPR.Manuscript.Proposition1
+✔ [1840/1840] Built QPPR.Manuscript.Proposition1 (1.6s)
+Build completed successfully (1840 jobs).
+
+Target 21/37: QPPR.Manuscript.Proposition2
+✔ [1841/1841] Built QPPR.Manuscript.Proposition2 (1.7s)
+Build completed successfully (1841 jobs).
+
+Target 22/37: QPPR.Manuscript.Proposition3
+✔ [1844/1844] Built QPPR.Manuscript.Proposition3 (1.7s)
+Build completed successfully (1844 jobs).
+
+Target 23/37: QPPR.Manuscript.QuotientCompression
+✔ [1839/1839] Built QPPR.Manuscript.QuotientCompression (1.8s)
+Build completed successfully (1839 jobs).
+
+Target 24/37: QPPR.Manuscript.ProofTargets
+✔ [1836/1836] Built QPPR.Manuscript.ProofTargets (1.6s)
+Build completed successfully (1836 jobs).
+
+Target 25/37: QPPR.Manuscript.GeometricBound
+✔ [1837/1837] Built QPPR.Manuscript.GeometricBound (1.6s)
+Build completed successfully (1837 jobs).
+
+Target 26/37: QPPR.Manuscript.TransitiveBlocks
+✔ [1836/1836] Built QPPR.Manuscript.TransitiveBlocks (1.6s)
+Build completed successfully (1836 jobs).
+
+Target 27/37: QPPR.Manuscript.ConcreteSymmetry
+⚠ [1845/1845] Built QPPR.Manuscript.ConcreteSymmetry (1.9s)
+warning: QPPR/Manuscript/ConcreteSymmetry.lean:58:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteSymmetry.amplitude_invariant`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/ConcreteSymmetry.lean:109:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteSymmetry.swap_equivariant`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully (1845 jobs).
+
+Target 28/37: QPPR.Manuscript.PhysicalWalk
+⚠ [1845/1846] Replayed QPPR.Manuscript.ConcreteSymmetry
+warning: QPPR/Manuscript/ConcreteSymmetry.lean:58:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteSymmetry.amplitude_invariant`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/ConcreteSymmetry.lean:109:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteSymmetry.swap_equivariant`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [1846/1846] Built QPPR.Manuscript.PhysicalWalk (2.4s)
+warning: QPPR/Manuscript/PhysicalWalk.lean:22:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalWalk.star_amplitude`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:53:27: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  simp [D, Finset.mul_sum, m̵u̵l̵_̵a̵s̵s̵o̵c̵,̵ ̵mul_left_comm, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:84:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalWalk.initial_pairState`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:104:76: This simp argument is unused:
+  hc
+
+Hint: Omit it from the simp argument list.
+  simp only [Complex.normSq_add, Complex.normSq_mul, amplitude_normSq G hG,̵ ̵h̵c̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:100:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Build completed successfully (1846 jobs).
+
+Target 29/37: QPPR.Manuscript.UnitaryWalk
+⚠ [1844/1898] Replayed QPPR.Manuscript.ConcreteSymmetry
+warning: QPPR/Manuscript/ConcreteSymmetry.lean:58:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteSymmetry.amplitude_invariant`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/ConcreteSymmetry.lean:109:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteSymmetry.swap_equivariant`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [1845/1898] Replayed QPPR.Manuscript.PhysicalWalk
+warning: QPPR/Manuscript/PhysicalWalk.lean:22:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalWalk.star_amplitude`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:53:27: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  simp [D, Finset.mul_sum, m̵u̵l̵_̵a̵s̵s̵o̵c̵,̵ ̵mul_left_comm, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:84:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalWalk.initial_pairState`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:104:76: This simp argument is unused:
+  hc
+
+Hint: Omit it from the simp argument list.
+  simp only [Complex.normSq_add, Complex.normSq_mul, amplitude_normSq G hG,̵ ̵h̵c̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:100:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2371/2371] Built QPPR.Manuscript.UnitaryWalk (2.3s)
+warning: QPPR/Manuscript/UnitaryWalk.lean:23:54: This simp argument is unused:
+  hs
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.mul_apply, A, Fintype.sum_prod_type, hs̵, h̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵Matrix.one_apply, Ne.symm h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/UnitaryWalk.lean:24:6: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.mul_apply, A, Fintype.sum_prod_type, hs, h, M̵a̵t̵r̵i̵x̵.̵o̵n̵e̵_̵a̵p̵p̵l̵y̵,̵ ̵Ne.symm h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (2371 jobs).
+
+Target 30/37: QPPR.Manuscript.FiniteSpectrum
+⚠ [2893/2893] Built QPPR.Manuscript.FiniteSpectrum (2.7s)
+warning: QPPR/Manuscript/FiniteSpectrum.lean:18:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.FiniteSpectrum.projector_continuous`:
+  [Nonempty J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/FiniteSpectrum.lean:74:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.FiniteSpectrum.projector_selfadjoint`:
+  [Nonempty J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/FiniteSpectrum.lean:96:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.FiniteSpectrum.projector_commutes`:
+  [Nonempty J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully (2893 jobs).
+
+Target 31/37: QPPR.Manuscript.MeasuredSpectrum
+⚠ [1863/1863] Built QPPR.Manuscript.MeasuredSpectrum (2.2s)
+warning: QPPR/Manuscript/MeasuredSpectrum.lean:36:13: Variable name `hn` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: QPPR/Manuscript/MeasuredSpectrum.lean:52:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.MeasuredSpectrum.phase_distinct`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/MeasuredSpectrum.lean:140:57: This simp argument is unused:
+  norm_mul
+
+Hint: Omit it from the simp argument list.
+  simp [n̵o̵r̵m̵_̵m̵u̵l̵,̵ ̵hunit]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (1863 jobs).
+
+Target 32/37: QPPR.Manuscript.ConcreteLimit
+⚠ [1844/1875] Replayed QPPR.Manuscript.ConcreteSymmetry
+warning: QPPR/Manuscript/ConcreteSymmetry.lean:58:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteSymmetry.amplitude_invariant`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/ConcreteSymmetry.lean:109:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteSymmetry.swap_equivariant`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [1845/1875] Replayed QPPR.Manuscript.PhysicalWalk
+warning: QPPR/Manuscript/PhysicalWalk.lean:22:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalWalk.star_amplitude`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:53:27: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  simp [D, Finset.mul_sum, m̵u̵l̵_̵a̵s̵s̵o̵c̵,̵ ̵mul_left_comm, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:84:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalWalk.initial_pairState`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:104:76: This simp argument is unused:
+  hc
+
+Hint: Omit it from the simp argument list.
+  simp only [Complex.normSq_add, Complex.normSq_mul, amplitude_normSq G hG,̵ ̵h̵c̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:100:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2370/2590] Replayed QPPR.Manuscript.UnitaryWalk
+warning: QPPR/Manuscript/UnitaryWalk.lean:23:54: This simp argument is unused:
+  hs
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.mul_apply, A, Fintype.sum_prod_type, hs̵, h̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵Matrix.one_apply, Ne.symm h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/UnitaryWalk.lean:24:6: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.mul_apply, A, Fintype.sum_prod_type, hs, h, M̵a̵t̵r̵i̵x̵.̵o̵n̵e̵_̵a̵p̵p̵l̵y̵,̵ ̵Ne.symm h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2908/2914] Replayed QPPR.Manuscript.FiniteSpectrum
+warning: QPPR/Manuscript/FiniteSpectrum.lean:18:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.FiniteSpectrum.projector_continuous`:
+  [Nonempty J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/FiniteSpectrum.lean:74:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.FiniteSpectrum.projector_selfadjoint`:
+  [Nonempty J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/FiniteSpectrum.lean:96:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.FiniteSpectrum.projector_commutes`:
+  [Nonempty J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2912/2914] Replayed QPPR.Manuscript.MeasuredSpectrum
+warning: QPPR/Manuscript/MeasuredSpectrum.lean:36:13: Variable name `hn` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: QPPR/Manuscript/MeasuredSpectrum.lean:52:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.MeasuredSpectrum.phase_distinct`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/MeasuredSpectrum.lean:140:57: This simp argument is unused:
+  norm_mul
+
+Hint: Omit it from the simp argument list.
+  simp [n̵o̵r̵m̵_̵m̵u̵l̵,̵ ̵hunit]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2914/2914] Built QPPR.Manuscript.ConcreteLimit (2.6s)
+warning: QPPR/Manuscript/ConcreteLimit.lean:18:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteLimit.physical_matrix_evolution`:
+  [Nonempty N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/ConcreteLimit.lean:72:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteLimit.source_error_identity`:
+  [DecidableEq N]
+  [Nonempty N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq N] [Nonempty N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/ConcreteLimit.lean:105:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteLimit.errorConstant_nonnegative`:
+  [Nonempty N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully (2914 jobs).
+
+Target 33/37: QPPR.Manuscript.PhysicalQuotient
+⚠ [1845/1847] Replayed QPPR.Manuscript.ConcreteSymmetry
+warning: QPPR/Manuscript/ConcreteSymmetry.lean:58:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteSymmetry.amplitude_invariant`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/ConcreteSymmetry.lean:109:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteSymmetry.swap_equivariant`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [1846/1847] Replayed QPPR.Manuscript.PhysicalWalk
+warning: QPPR/Manuscript/PhysicalWalk.lean:22:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalWalk.star_amplitude`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:53:27: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  simp [D, Finset.mul_sum, m̵u̵l̵_̵a̵s̵s̵o̵c̵,̵ ̵mul_left_comm, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:84:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalWalk.initial_pairState`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:104:76: This simp argument is unused:
+  hc
+
+Hint: Omit it from the simp argument list.
+  simp only [Complex.normSq_add, Complex.normSq_mul, amplitude_normSq G hG,̵ ̵h̵c̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:100:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [1847/1847] Built QPPR.Manuscript.PhysicalQuotient (1.0s)
+warning: QPPR/Manuscript/PhysicalQuotient.lean:19:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalQuotient.aggregate_uniform`:
+  [Fintype R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype R] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/PhysicalQuotient.lean:42:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalQuotient.embedding_normSq`:
+  [Fintype N]
+  [Fintype R]
+  [DecidableEq R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] [Fintype R] [DecidableEq R] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/PhysicalQuotient.lean:65:31: This simp argument is unused:
+  hL
+
+Hint: Omit it from the simp argument list.
+  simp only [← Finset.sum_mul, h̵L̵,̵ ̵embedding_normSq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/PhysicalQuotient.lean:143:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalQuotient.fiber_card_pos`:
+  [Fintype R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype R] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully (1847 jobs).
+
+Target 34/37: QPPR.Manuscript.ClassicalLimit
+⚠ [1845/1946] Replayed QPPR.Manuscript.ConcreteSymmetry
+warning: QPPR/Manuscript/ConcreteSymmetry.lean:58:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteSymmetry.amplitude_invariant`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/ConcreteSymmetry.lean:109:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteSymmetry.swap_equivariant`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [1846/1946] Replayed QPPR.Manuscript.PhysicalWalk
+warning: QPPR/Manuscript/PhysicalWalk.lean:22:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalWalk.star_amplitude`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:53:27: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  simp [D, Finset.mul_sum, m̵u̵l̵_̵a̵s̵s̵o̵c̵,̵ ̵mul_left_comm, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:84:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalWalk.initial_pairState`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:104:76: This simp argument is unused:
+  hc
+
+Hint: Omit it from the simp argument list.
+  simp only [Complex.normSq_add, Complex.normSq_mul, amplitude_normSq G hG,̵ ̵h̵c̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:100:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [1946/1946] Built QPPR.Manuscript.ClassicalLimit (2.3s)
+warning: QPPR/Manuscript/ClassicalLimit.lean:14:84: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  simp [classicalStep, Finset.mul_sum, mul_left_comm,̵ ̵m̵u̵l̵_̵a̵s̵s̵o̵c̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/ClassicalLimit.lean:19:50: Variable name `i` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (1946 jobs).
+
+Target 35/37: QPPR.Manuscript.DiscriminantComputation
+⚠ [1844/2095] Replayed QPPR.Manuscript.ConcreteSymmetry
+warning: QPPR/Manuscript/ConcreteSymmetry.lean:58:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteSymmetry.amplitude_invariant`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/ConcreteSymmetry.lean:109:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteSymmetry.swap_equivariant`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [1845/2095] Replayed QPPR.Manuscript.PhysicalWalk
+warning: QPPR/Manuscript/PhysicalWalk.lean:22:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalWalk.star_amplitude`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:53:27: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  simp [D, Finset.mul_sum, m̵u̵l̵_̵a̵s̵s̵o̵c̵,̵ ̵mul_left_comm, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:84:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalWalk.initial_pairState`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:104:76: This simp argument is unused:
+  hc
+
+Hint: Omit it from the simp argument list.
+  simp only [Complex.normSq_add, Complex.normSq_mul, amplitude_normSq G hG,̵ ̵h̵c̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:100:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2370/2480] Replayed QPPR.Manuscript.UnitaryWalk
+warning: QPPR/Manuscript/UnitaryWalk.lean:23:54: This simp argument is unused:
+  hs
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.mul_apply, A, Fintype.sum_prod_type, hs̵, h̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵Matrix.one_apply, Ne.symm h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/UnitaryWalk.lean:24:6: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.mul_apply, A, Fintype.sum_prod_type, hs, h, M̵a̵t̵r̵i̵x̵.̵o̵n̵e̵_̵a̵p̵p̵l̵y̵,̵ ̵Ne.symm h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2606/2606] Built QPPR.Manuscript.DiscriminantComputation (1.0s)
+warning: QPPR/Manuscript/DiscriminantComputation.lean:13:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.DiscriminantComputation.K_hermitian`:
+  [DecidableEq N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/DiscriminantComputation.lean:22:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.DiscriminantComputation.D_matrix`:
+  [DecidableEq N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/DiscriminantComputation.lean:24:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.DiscriminantComputation.discriminant_entries`:
+  [DecidableEq N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/DiscriminantComputation.lean:51:26: This simp argument is unused:
+  Unitary.coe_star_mul_self
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.mul_assoc,̵ ̵U̵n̵i̵t̵a̵r̵y̵.̵c̵o̵e̵_̵s̵t̵a̵r̵_̵m̵u̵l̵_̵s̵e̵l̵f̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Build completed successfully (2606 jobs).
+
+Target 36/37: QPPR.Manuscript.CompletePropositions
+⚠ [1844/1898] Replayed QPPR.Manuscript.ConcreteSymmetry
+warning: QPPR/Manuscript/ConcreteSymmetry.lean:58:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteSymmetry.amplitude_invariant`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/ConcreteSymmetry.lean:109:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteSymmetry.swap_equivariant`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [1845/1898] Replayed QPPR.Manuscript.PhysicalWalk
+warning: QPPR/Manuscript/PhysicalWalk.lean:22:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalWalk.star_amplitude`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:53:27: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  simp [D, Finset.mul_sum, m̵u̵l̵_̵a̵s̵s̵o̵c̵,̵ ̵mul_left_comm, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:84:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalWalk.initial_pairState`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:104:76: This simp argument is unused:
+  hc
+
+Hint: Omit it from the simp argument list.
+  simp only [Complex.normSq_add, Complex.normSq_mul, amplitude_normSq G hG,̵ ̵h̵c̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:100:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2370/2684] Replayed QPPR.Manuscript.UnitaryWalk
+warning: QPPR/Manuscript/UnitaryWalk.lean:23:54: This simp argument is unused:
+  hs
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.mul_apply, A, Fintype.sum_prod_type, hs̵, h̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵Matrix.one_apply, Ne.symm h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/UnitaryWalk.lean:24:6: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.mul_apply, A, Fintype.sum_prod_type, hs, h, M̵a̵t̵r̵i̵x̵.̵o̵n̵e̵_̵a̵p̵p̵l̵y̵,̵ ̵Ne.symm h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2908/2954] Replayed QPPR.Manuscript.FiniteSpectrum
+warning: QPPR/Manuscript/FiniteSpectrum.lean:18:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.FiniteSpectrum.projector_continuous`:
+  [Nonempty J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/FiniteSpectrum.lean:74:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.FiniteSpectrum.projector_selfadjoint`:
+  [Nonempty J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/FiniteSpectrum.lean:96:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.FiniteSpectrum.projector_commutes`:
+  [Nonempty J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2912/2954] Replayed QPPR.Manuscript.MeasuredSpectrum
+warning: QPPR/Manuscript/MeasuredSpectrum.lean:36:13: Variable name `hn` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: QPPR/Manuscript/MeasuredSpectrum.lean:52:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.MeasuredSpectrum.phase_distinct`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/MeasuredSpectrum.lean:140:57: This simp argument is unused:
+  norm_mul
+
+Hint: Omit it from the simp argument list.
+  simp [n̵o̵r̵m̵_̵m̵u̵l̵,̵ ̵hunit]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2914/2954] Replayed QPPR.Manuscript.ConcreteLimit
+warning: QPPR/Manuscript/ConcreteLimit.lean:18:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteLimit.physical_matrix_evolution`:
+  [Nonempty N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/ConcreteLimit.lean:72:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteLimit.source_error_identity`:
+  [DecidableEq N]
+  [Nonempty N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq N] [Nonempty N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/ConcreteLimit.lean:105:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteLimit.errorConstant_nonnegative`:
+  [Nonempty N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2915/2954] Replayed QPPR.Manuscript.PhysicalQuotient
+warning: QPPR/Manuscript/PhysicalQuotient.lean:19:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalQuotient.aggregate_uniform`:
+  [Fintype R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype R] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/PhysicalQuotient.lean:42:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalQuotient.embedding_normSq`:
+  [Fintype N]
+  [Fintype R]
+  [DecidableEq R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] [Fintype R] [DecidableEq R] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/PhysicalQuotient.lean:65:31: This simp argument is unused:
+  hL
+
+Hint: Omit it from the simp argument list.
+  simp only [← Finset.sum_mul, h̵L̵,̵ ̵embedding_normSq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/PhysicalQuotient.lean:143:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalQuotient.fiber_card_pos`:
+  [Fintype R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype R] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2916/2954] Replayed QPPR.Manuscript.ClassicalLimit
+warning: QPPR/Manuscript/ClassicalLimit.lean:14:84: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  simp [classicalStep, Finset.mul_sum, mul_left_comm,̵ ̵m̵u̵l̵_̵a̵s̵s̵o̵c̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/ClassicalLimit.lean:19:50: Variable name `i` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [2952/2954] Replayed QPPR.Manuscript.DiscriminantComputation
+warning: QPPR/Manuscript/DiscriminantComputation.lean:13:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.DiscriminantComputation.K_hermitian`:
+  [DecidableEq N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/DiscriminantComputation.lean:22:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.DiscriminantComputation.D_matrix`:
+  [DecidableEq N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/DiscriminantComputation.lean:24:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.DiscriminantComputation.discriminant_entries`:
+  [DecidableEq N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/DiscriminantComputation.lean:51:26: This simp argument is unused:
+  Unitary.coe_star_mul_self
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.mul_assoc,̵ ̵U̵n̵i̵t̵a̵r̵y̵.̵c̵o̵e̵_̵s̵t̵a̵r̵_̵m̵u̵l̵_̵s̵e̵l̵f̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2954/2954] Built QPPR.Manuscript.CompletePropositions (2.3s)
+warning: QPPR/Manuscript/CompletePropositions.lean:28:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.CompletePropositions.quotient_stochastic`:
+  [DecidableEq N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/CompletePropositions.lean:138:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.CompletePropositions.member_recovery`:
+  [Fintype R]
+  [DecidableEq N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype R] [DecidableEq N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully (2954 jobs).
+
+Target 37/37: QPPR
+⚠ [1860/1918] Replayed QPPR.Manuscript.ConcreteSymmetry
+warning: QPPR/Manuscript/ConcreteSymmetry.lean:58:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteSymmetry.amplitude_invariant`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/ConcreteSymmetry.lean:109:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteSymmetry.swap_equivariant`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [1861/1918] Replayed QPPR.Manuscript.PhysicalWalk
+warning: QPPR/Manuscript/PhysicalWalk.lean:22:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalWalk.star_amplitude`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:53:27: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  simp [D, Finset.mul_sum, m̵u̵l̵_̵a̵s̵s̵o̵c̵,̵ ̵mul_left_comm, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:84:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalWalk.initial_pairState`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:104:76: This simp argument is unused:
+  hc
+
+Hint: Omit it from the simp argument list.
+  simp only [Complex.normSq_add, Complex.normSq_mul, amplitude_normSq G hG,̵ ̵h̵c̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:100:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2386/2717] Replayed QPPR.Manuscript.UnitaryWalk
+warning: QPPR/Manuscript/UnitaryWalk.lean:23:54: This simp argument is unused:
+  hs
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.mul_apply, A, Fintype.sum_prod_type, hs̵, h̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵Matrix.one_apply, Ne.symm h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/UnitaryWalk.lean:24:6: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.mul_apply, A, Fintype.sum_prod_type, hs, h, M̵a̵t̵r̵i̵x̵.̵o̵n̵e̵_̵a̵p̵p̵l̵y̵,̵ ̵Ne.symm h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2924/2967] Replayed QPPR.Manuscript.FiniteSpectrum
+warning: QPPR/Manuscript/FiniteSpectrum.lean:18:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.FiniteSpectrum.projector_continuous`:
+  [Nonempty J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/FiniteSpectrum.lean:74:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.FiniteSpectrum.projector_selfadjoint`:
+  [Nonempty J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/FiniteSpectrum.lean:96:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.FiniteSpectrum.projector_commutes`:
+  [Nonempty J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2925/2967] Replayed QPPR.Manuscript.MeasuredSpectrum
+warning: QPPR/Manuscript/MeasuredSpectrum.lean:36:13: Variable name `hn` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: QPPR/Manuscript/MeasuredSpectrum.lean:52:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.MeasuredSpectrum.phase_distinct`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/MeasuredSpectrum.lean:140:57: This simp argument is unused:
+  norm_mul
+
+Hint: Omit it from the simp argument list.
+  simp [n̵o̵r̵m̵_̵m̵u̵l̵,̵ ̵hunit]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2926/2967] Replayed QPPR.Manuscript.ConcreteLimit
+warning: QPPR/Manuscript/ConcreteLimit.lean:18:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteLimit.physical_matrix_evolution`:
+  [Nonempty N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/ConcreteLimit.lean:72:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteLimit.source_error_identity`:
+  [DecidableEq N]
+  [Nonempty N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq N] [Nonempty N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/ConcreteLimit.lean:105:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteLimit.errorConstant_nonnegative`:
+  [Nonempty N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2927/2967] Replayed QPPR.Manuscript.PhysicalQuotient
+warning: QPPR/Manuscript/PhysicalQuotient.lean:19:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalQuotient.aggregate_uniform`:
+  [Fintype R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype R] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/PhysicalQuotient.lean:42:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalQuotient.embedding_normSq`:
+  [Fintype N]
+  [Fintype R]
+  [DecidableEq R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] [Fintype R] [DecidableEq R] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/PhysicalQuotient.lean:65:31: This simp argument is unused:
+  hL
+
+Hint: Omit it from the simp argument list.
+  simp only [← Finset.sum_mul, h̵L̵,̵ ̵embedding_normSq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/PhysicalQuotient.lean:143:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalQuotient.fiber_card_pos`:
+  [Fintype R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype R] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2928/2967] Replayed QPPR.Manuscript.ClassicalLimit
+warning: QPPR/Manuscript/ClassicalLimit.lean:14:84: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  simp [classicalStep, Finset.mul_sum, mul_left_comm,̵ ̵m̵u̵l̵_̵a̵s̵s̵o̵c̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/ClassicalLimit.lean:19:50: Variable name `i` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [2964/2967] Replayed QPPR.Manuscript.DiscriminantComputation
+warning: QPPR/Manuscript/DiscriminantComputation.lean:13:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.DiscriminantComputation.K_hermitian`:
+  [DecidableEq N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/DiscriminantComputation.lean:22:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.DiscriminantComputation.D_matrix`:
+  [DecidableEq N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/DiscriminantComputation.lean:24:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.DiscriminantComputation.discriminant_entries`:
+  [DecidableEq N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/DiscriminantComputation.lean:51:26: This simp argument is unused:
+  Unitary.coe_star_mul_self
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.mul_assoc,̵ ̵U̵n̵i̵t̵a̵r̵y̵.̵c̵o̵e̵_̵s̵t̵a̵r̵_̵m̵u̵l̵_̵s̵e̵l̵f̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2965/2967] Replayed QPPR.Manuscript.CompletePropositions
+warning: QPPR/Manuscript/CompletePropositions.lean:28:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.CompletePropositions.quotient_stochastic`:
+  [DecidableEq N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/CompletePropositions.lean:138:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.CompletePropositions.member_recovery`:
+  [Fintype R]
+  [DecidableEq N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype R] [DecidableEq N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [2966/2967] Built QPPR (1.9s)
+Build completed successfully (2967 jobs).
+⚠ [1860/2075] Replayed QPPR.Manuscript.ConcreteSymmetry
+warning: QPPR/Manuscript/ConcreteSymmetry.lean:58:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteSymmetry.amplitude_invariant`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/ConcreteSymmetry.lean:109:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteSymmetry.swap_equivariant`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [1861/2075] Replayed QPPR.Manuscript.PhysicalWalk
+warning: QPPR/Manuscript/PhysicalWalk.lean:22:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalWalk.star_amplitude`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:53:27: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  simp [D, Finset.mul_sum, m̵u̵l̵_̵a̵s̵s̵o̵c̵,̵ ̵mul_left_comm, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:84:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalWalk.initial_pairState`:
+  [Fintype N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:104:76: This simp argument is unused:
+  hc
+
+Hint: Omit it from the simp argument list.
+  simp only [Complex.normSq_add, Complex.normSq_mul, amplitude_normSq G hG,̵ ̵h̵c̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/PhysicalWalk.lean:100:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2386/2425] Replayed QPPR.Manuscript.UnitaryWalk
+warning: QPPR/Manuscript/UnitaryWalk.lean:23:54: This simp argument is unused:
+  hs
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.mul_apply, A, Fintype.sum_prod_type, hs̵, h̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵Matrix.one_apply, Ne.symm h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/UnitaryWalk.lean:24:6: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.mul_apply, A, Fintype.sum_prod_type, hs, h, M̵a̵t̵r̵i̵x̵.̵o̵n̵e̵_̵a̵p̵p̵l̵y̵,̵ ̵Ne.symm h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2924/2967] Replayed QPPR.Manuscript.FiniteSpectrum
+warning: QPPR/Manuscript/FiniteSpectrum.lean:18:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.FiniteSpectrum.projector_continuous`:
+  [Nonempty J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/FiniteSpectrum.lean:74:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.FiniteSpectrum.projector_selfadjoint`:
+  [Nonempty J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/FiniteSpectrum.lean:96:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.FiniteSpectrum.projector_commutes`:
+  [Nonempty J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2925/2967] Replayed QPPR.Manuscript.MeasuredSpectrum
+warning: QPPR/Manuscript/MeasuredSpectrum.lean:36:13: Variable name `hn` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: QPPR/Manuscript/MeasuredSpectrum.lean:52:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.MeasuredSpectrum.phase_distinct`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/MeasuredSpectrum.lean:140:57: This simp argument is unused:
+  norm_mul
+
+Hint: Omit it from the simp argument list.
+  simp [n̵o̵r̵m̵_̵m̵u̵l̵,̵ ̵hunit]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2926/2967] Replayed QPPR.Manuscript.ConcreteLimit
+warning: QPPR/Manuscript/ConcreteLimit.lean:18:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteLimit.physical_matrix_evolution`:
+  [Nonempty N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/ConcreteLimit.lean:72:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteLimit.source_error_identity`:
+  [DecidableEq N]
+  [Nonempty N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq N] [Nonempty N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/ConcreteLimit.lean:105:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.ConcreteLimit.errorConstant_nonnegative`:
+  [Nonempty N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Nonempty N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2927/2967] Replayed QPPR.Manuscript.PhysicalQuotient
+warning: QPPR/Manuscript/PhysicalQuotient.lean:19:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalQuotient.aggregate_uniform`:
+  [Fintype R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype R] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/PhysicalQuotient.lean:42:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalQuotient.embedding_normSq`:
+  [Fintype N]
+  [Fintype R]
+  [DecidableEq R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype N] [Fintype R] [DecidableEq R] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/PhysicalQuotient.lean:65:31: This simp argument is unused:
+  hL
+
+Hint: Omit it from the simp argument list.
+  simp only [← Finset.sum_mul, h̵L̵,̵ ̵embedding_normSq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/PhysicalQuotient.lean:143:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.PhysicalQuotient.fiber_card_pos`:
+  [Fintype R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype R] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [2928/2967] Replayed QPPR.Manuscript.ClassicalLimit
+warning: QPPR/Manuscript/ClassicalLimit.lean:14:84: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  simp [classicalStep, Finset.mul_sum, mul_left_comm,̵ ̵m̵u̵l̵_̵a̵s̵s̵o̵c̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QPPR/Manuscript/ClassicalLimit.lean:19:50: Variable name `i` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [2964/2967] Replayed QPPR.Manuscript.DiscriminantComputation
+warning: QPPR/Manuscript/DiscriminantComputation.lean:13:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.DiscriminantComputation.K_hermitian`:
+  [DecidableEq N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/DiscriminantComputation.lean:22:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.DiscriminantComputation.D_matrix`:
+  [DecidableEq N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/DiscriminantComputation.lean:24:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.DiscriminantComputation.discriminant_entries`:
+  [DecidableEq N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/DiscriminantComputation.lean:51:26: This simp argument is unused:
+  Unitary.coe_star_mul_self
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.mul_assoc,̵ ̵U̵n̵i̵t̵a̵r̵y̵.̵c̵o̵e̵_̵s̵t̵a̵r̵_̵m̵u̵l̵_̵s̵e̵l̵f̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2965/2967] Replayed QPPR.Manuscript.CompletePropositions
+warning: QPPR/Manuscript/CompletePropositions.lean:28:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.CompletePropositions.quotient_stochastic`:
+  [DecidableEq N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: QPPR/Manuscript/CompletePropositions.lean:138:0: automatically included section variable(s) unused in theorem `QPPR.Manuscript.CompletePropositions.member_recovery`:
+  [Fintype R]
+  [DecidableEq N]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype R] [DecidableEq N] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully (2967 jobs).

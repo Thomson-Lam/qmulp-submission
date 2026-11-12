@@ -12,6 +12,7 @@ The pipeline prepares credit data, builds borrower networks, computes classical 
 | Compute quantum scores, run circuit simulations, and assemble paper outputs | [Quantum pipelines](quantum-pipelines.md) |
 | Inspect the recorded local checks and their limits | [Verification record](../results/verification/README.md) |
 | Read the classical graph and PageRank implementation | [MuLP module guide](../src/classical/mulp/README.md) |
+| Build the Lean proofs and check theorem hypotheses | [Lean project README](../src/lean/README.md) |
 
 ## Run entry points
 
@@ -52,7 +53,9 @@ Stages 07 through 10 run scripts for the counterexample, synthetic experiments, 
 
 [src/config.py](../src/config.py) defines experiment settings and seeds. [src/fingerprint.py](../src/fingerprint.py) defines the reduced smoke settings. Dataset definitions are in [src/hmeq/config.py](../src/hmeq/config.py) and [src/fmac/config.py](../src/fmac/config.py).
 
-[src/paths.py](../src/paths.py) anchors file locations to the repository root. Generated outputs are excluded from Git and must be regenerated after a fresh checkout.
+[src/paths.py](../src/paths.py) anchors file locations to the repository root.
+Generated Python pipeline outputs under `results/outputs/` are excluded from Git and must be regenerated after a fresh checkout.
+The saved verification records under `results/verification/` and `results/lean/` are separate from those outputs.
 
 | Path relative to the repository root | Contents |
 |---|---|

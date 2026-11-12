@@ -1,6 +1,6 @@
 # Quantum Personalized PageRank for credit-risk networks
 
-This repository compares Quantum Personalized PageRank, or QPPR, with classical personalized PageRank on multilayer credit-risk networks. It contains the experiment code, stage notebooks, tests, and local verification records for HMEQ and the author-supplied Freddie Mac Florida extracts.
+This repository compares Quantum Personalized PageRank, or QPPR, with classical personalized PageRank on multilayer credit-risk networks. The experiment code supports HMEQ and the author-supplied Freddie Mac Florida extracts. The saved Python verification records cover HMEQ, not a completed Freddie Mac run.
 
 ## Cite
 
@@ -80,7 +80,7 @@ bash scripts/run.sh -m scripts.preflight --fresh
 
 `--fresh` fails if `results/outputs/` contains files outside `logs/`. It does not delete files. Archive previous outputs before a new run, especially when changing from smoke to full settings. Keep outputs between stages of the same run because later stages need them.
 
-Generated outputs are gitignored. They are not restored by a fresh checkout. Stage 01 also rewrites processed data in `data/`. `scripts/run_all.py` does not perform the clean-start check automatically.
+Generated pipeline outputs under `results/outputs/` are excluded from Git. They are not restored by a fresh checkout. Stage 01 also rewrites processed data in `data/`. `scripts/run_all.py` does not perform the clean-start check automatically.
 
 ### Check HMEQ locally
 
@@ -232,12 +232,33 @@ Do not run the suite while another process writes pipeline outputs. Some tests i
 
 The old port-integrity script, `scripts/verify-port.sh`, needs checksum manifests that are no longer in this checkout. It is not a prerequisite for running experiments or tests.
 
+## Lean proof verification
+
+The [Lean proof project](src/lean/README.md) formalizes manuscript Propositions 1, 2, and 3 and supporting electronic-companion results.
+Its README links to the theorem declarations and explains their hypotheses.
+The proof is separate from the numerical experiments and needs no credit data. It does not verify the Python implementation.
+
+With Git and the Lean/Lake toolchain manager [elan](https://github.com/leanprover/elan)
+installed, run from the repository root:
+
+```bash
+bash scripts/verify-lean.sh
+```
+
+The project pins Lean 4.31.0 and Mathlib dependencies. The wrapper builds the
+library and runs the 19-theorem axiom audit, saving fresh logs in `results/lean/`
+without overwriting the supplied records in `src/lean/`.
+The saved submission logs report a successful build with 2,967 jobs and a passing 19-theorem audit.
+First use requires network access to fetch the toolchain and dependencies.
+
 ## Repository layout
 
 | Directory | Contents |
 |---|---|
 | `src/` | Classical and quantum methods, data preparation, evaluation, configuration, and stage drivers |
-| `scripts/` | Run wrappers, experiment drivers, preflight checks, and figure and table assemblers |
+| `src/lean/` | Lean proofs, pinned dependency configuration, project README, audit scripts, and supplied verification records |
+| `scripts/` | Run wrappers, Lean verification, experiment drivers, preflight checks, and figure and table assemblers |
+| `results/lean/` | Saved submission build and axiom-audit logs, overwritten by `scripts/verify-lean.sh` |
 | `notebooks/` | Dataset preparation and stage notebooks |
 | `tests/` | Operator, circuit, evaluation, pipeline, and output-contract tests |
 | `data/` | Dataset instructions and locally obtained inputs |
@@ -250,5 +271,3 @@ Run parameters live in `src/config.py`. Dataset definitions live in `src/hmeq/co
 ## License and submission status
 
 [LICENSE](LICENSE) is currently an incomplete license notice, not a license grant. [AUTHORS](AUTHORS) does not yet contain the author list. The authors must complete both files and the final citation before public deposit. Dataset permissions require separate review.
-
-The [IJOC author instructions](https://informsjoc.github.io/InstructionsForAuthors.html) describe submission through a pull request to the journal's assigned private repository. This README documents how to run this code; it does not assert that journal review or archival is complete.
