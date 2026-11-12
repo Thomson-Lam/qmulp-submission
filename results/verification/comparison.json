@@ -1,0 +1,38 @@
+{
+  "comparison": "canonical versus port, identical environment and smoke settings",
+  "artifacts": [
+    {
+      "artifact": "notebook_pipeline/03_classical/classical_scores_NET_JOB.parquet",
+      "rows": 5853,
+      "exact_match": true,
+      "maximum_score_difference": 0.0
+    },
+    {
+      "artifact": "notebook_pipeline/03_classical/classical_scores_NET_REASON.parquet",
+      "rows": 5853,
+      "exact_match": true,
+      "maximum_score_difference": 0.0
+    },
+    {
+      "artifact": "notebook_pipeline/03_classical/classical_scores_NET_2L.parquet",
+      "rows": 5853,
+      "exact_match": true,
+      "maximum_score_difference": 0.0
+    },
+    {
+      "artifact": "results/hmeq/EC_hardware_scores.csv",
+      "rows": 11,
+      "exact_match": true
+    },
+    {
+      "artifact": "results/hmeq/T6_hardware.csv",
+      "rows": 4,
+      "exact_match": true
+    },
+    {
+      "artifact": "results/hmeq/T6_hardware_header.csv",
+      "rows": 1,
+      "exact_match": true
+    }
+  ]
+}

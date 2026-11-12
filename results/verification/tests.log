@@ -1,0 +1,32 @@
+........................................................................ [ 36%]
+..........s...........................s.........................s....... [ 72%]
+...................................s...ss.......sss...                   [100%]
+=============================== warnings summary ===============================
+tests/test_circuits.py: 13 warnings
+tests/test_noise_grid.py: 2 warnings
+  <venv>/lib/python3.12/site-packages/stevedore/extension.py:340: DeprecationWarning: Since backends now support running jobs that contain both fractional gates and dynamic circuit, IBMFractionalTranslationPlugin is deprecated as of qiskit-ibm-runtime 0.42.0 and will be removed no sooner than 3 months after the release date. Use IBMDynamicFractionalTranslationPlugin instead.
+    obj = plugin(*invoke_args, **invoke_kwds)
+
+tests/test_circuits.py::AerLayerTests::test_layers_are_distributions_over_retained_nodes_with_padding_reported
+tests/test_circuits.py::AerLayerTests::test_layers_are_distributions_over_retained_nodes_with_padding_reported
+tests/test_circuits.py::AerLayerTests::test_layers_are_distributions_over_retained_nodes_with_padding_reported
+tests/test_circuits.py::AerLayerTests::test_layers_are_distributions_over_retained_nodes_with_padding_reported
+tests/test_circuits.py::AerLayerTests::test_layers_are_distributions_over_retained_nodes_with_padding_reported
+tests/test_circuits.py::AerLayerTests::test_layers_are_distributions_over_retained_nodes_with_padding_reported
+tests/test_circuits.py::AerLayerTests::test_layers_are_distributions_over_retained_nodes_with_padding_reported
+tests/test_circuits.py::AerLayerTests::test_layers_are_distributions_over_retained_nodes_with_padding_reported
+  <python-runtime>/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=25209) is multi-threaded, use of fork() may lead to deadlocks in the child.
+    self.pid = os.fork()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_mechanism_placebo.py:77: scripts/run_pipeline.sh is local and untracked; a clone without it skips this check
+SKIPPED [1] tests/test_noise_grid.py:301: no real noise grid under outputs/results for both datasets (or a smoke tree)
+SKIPPED [1] tests/test_number_map.py:324: a smoke tree is a wiring check: the keys its trimmed stages do not produce stay unresolved
+SKIPPED [1] tests/test_table_widths.py:61: pdflatex (with booktabs and the AMS packages) is not available
+SKIPPED [1] tests/test_variability.py:72: no HMEQ variability outputs yet
+SKIPPED [1] tests/test_variability.py:89: no HMEQ variability outputs yet
+SKIPPED [1] tests/test_warm.py:110: scripts/*.sbatch are local and untracked; a clone without them skips these checks
+SKIPPED [1] tests/test_warm.py:114: scripts/*.sbatch are local and untracked; a clone without them skips these checks
+SKIPPED [1] tests/test_warm.py:122: scripts/*.sbatch are local and untracked; a clone without them skips these checks
+189 passed, 9 skipped, 23 warnings in 17.85s

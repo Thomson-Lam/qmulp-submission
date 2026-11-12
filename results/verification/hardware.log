@@ -1,0 +1,13 @@
+run_all: warning: the working tree has uncommitted changes; the manifests record the commit, the dirty flag and source_sha256
+smoke=True
+task 0: noise grid of the full instance (6 of 6 classes)
+instance top_6_classes: m=4, touched physical qubits=8, two-qubit gates at tau=2: 2943, transpile 0 s, route D_bar
+94f3fce3db64ba1ddbcd2841aaabfa31b02fac9d1debf359d8e7832de2adae26  results/outputs/notebook_pipeline/06_hardware/grid_shards/grid_6.json
+smoke=True
+task 1: noise grid of the top_4_classes instance (4 of 6 classes)
+instance top_4_classes: m=4, touched physical qubits=8, two-qubit gates at tau=2: 3574, transpile 0 s, route D_bar
+0b95b693524c4cc9c614efc9066bf1f0eea5f07afc4a9b188db3a8f8b7a3eaf1  results/outputs/notebook_pipeline/06_hardware/grid_shards/grid_4.json
+== stage 06 hmeq: noise grid
+== stage 06 hmeq: 06_hardware.ipynb
+ 06grid:hmeq:      75.4 s
+     06:hmeq:      85.3 s

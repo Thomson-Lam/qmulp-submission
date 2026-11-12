@@ -1,0 +1,26 @@
+dataset,key,value,note
+hmeq,n_raw,5960,records in the supplied file(s)
+hmeq,n_dropped,107,records dropped before the split (no category in any layer)
+hmeq,n_borrowers,5853,individuals retained
+hmeq,n_dev,4682,development partition
+hmeq,n_test,1171,test partition
+hmeq,n_ref,943,development references (the reference set)
+hmeq,n_test_pos,236,test positives (masked from every operator)
+hmeq,prev_dev,0.20140965399401964,development prevalence
+hmeq,prev_test,0.20153714773697695,test prevalence
+hmeq,n_layers,2,layers of the two-layer network
+hmeq,layer_l1,JOB,layer name
+hmeq,levels_l1,6,category levels (development vocabulary)
+hmeq,n_missing_l1,172,individuals with no category in JOB (blank_field)
+hmeq,n_missing_l1_test,32,test individuals with no category in JOB
+hmeq,layer_l2,REASON,layer name
+hmeq,levels_l2,2,category levels (development vocabulary)
+hmeq,n_missing_l2,145,individuals with no category in REASON (blank_field)
+hmeq,n_missing_l2_test,26,test individuals with no category in REASON
+hmeq,n_partial,317,partially observed individuals (no edge in at least one layer)
+hmeq,n_partial_test,58,partially observed test individuals
+hmeq,n_blank_field_test,486,test individuals with at least one blank field
+hmeq,n_unseen_level_test,0,test individuals carrying a level outside the development vocabulary
+hmeq,n_structural_none_test,0,test individuals with a structural none (not a blank)
+hmeq,split,"one stratified 80/20 split on the outcome, seed 42",how the partitions were formed
+hmeq,split_seed,42,"seed of the split, null for a temporal split"

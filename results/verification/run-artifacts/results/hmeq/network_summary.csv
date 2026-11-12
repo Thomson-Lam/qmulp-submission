@@ -1,0 +1,4 @@
+network,n_layers,n_borrowers,category_nodes,N,n_edges,n_dangling,mean_degree,max_degree,max_distinct_levels,induced_distinct_levels,lumped_classes,lumped_seed_classes,lumped_supra_nodes,register_width_m,logical_qubits_2m,statevector_kib,borrowers_covered
+NET_JOB,1,5853,6,5859,11362,172,1.9978899243889572,2388.0,6,7,21,7,27,5,10,16.0,5853
+NET_REASON,1,5853,2,5855,11416,145,1.9992994746059545,3928.0,2,3,9,3,11,4,8,4.0,5853
+NET_2L,2,5853,8,11722,34484,8,2.9438278982414205,3928.0,20,19,54,18,116,7,14,256.0,5853

@@ -1,0 +1,42 @@
+{
+  "NET_2L/fold_0": {
+    "N": "11722",
+    "masked_frame": "c66a01929b8cf05b72691c08e77a8360d18bdaf3e924c68dca20f5908e9a7d66",
+    "n_layers": "2",
+    "personalization_vector": "361ee44efde3331cdc8b3676992eae0c1ee03f983bedd58f9c78feb357183fc2",
+    "restart_matrix": "a2e9a0f83b19629912cba3a34483fd7d82516031b2ba19bb5c4e861c84a6f1a5",
+    "transition_matrix": "741971ac89f4d04f126d82e0a1b0b2e72635ca40d3bb6b7caebb1f26e86c4959"
+  },
+  "NET_2L/fold_1": {
+    "N": "11722",
+    "masked_frame": "d9a2f9c469608f505ba474239640b1404a23962539d6d5e7006389693b194323",
+    "n_layers": "2",
+    "personalization_vector": "208d1b221a743abee5eb7d7a10fee70c0b82b4be72f61e4ba274bf737efc0b47",
+    "restart_matrix": "6d436174f3104e48b285e88414d1eabdc9169bc37f49914ee812755d17d2de2f",
+    "transition_matrix": "b6a6c270ba3b187cdd2b40aec60fb983896d3181003bb267adec95a39e1e2e6c"
+  },
+  "NET_2L/test_operator": {
+    "N": "11722",
+    "masked_frame": "17c95b01e47c017de828609eda2318a9c960989be2e8d6179e9418a7f6076487",
+    "n_layers": "2",
+    "personalization_vector": "efdd83f69ce6986438988a542598b951a1317de911e4324345836419e3da2727",
+    "restart_matrix": "6d12dd3512443024c4e5550fe9decacd31a8fb7b76a57ded1ae25d3543fd2de2",
+    "transition_matrix": "fc2e04f40f1b8cfccefde32491e80dc2df0593cfdbef59efe8275228869eff24"
+  },
+  "NET_JOB/test_operator": {
+    "N": "5859",
+    "masked_frame": "17c95b01e47c017de828609eda2318a9c960989be2e8d6179e9418a7f6076487",
+    "n_layers": "1",
+    "personalization_vector": "ae7a52757d5c765269a5a8825044788aa6cff2f73565b1b0b2ab2bd0f33c8a09",
+    "restart_matrix": "4c48a758e9653f56ed93ea33d0f727398033b0fb64281f26f547b334de882113",
+    "transition_matrix": "082544f0dc8b384415ed35170cb20c114099b7cef7dfb21a1808c35260af9ddc"
+  },
+  "NET_REASON/test_operator": {
+    "N": "5855",
+    "masked_frame": "17c95b01e47c017de828609eda2318a9c960989be2e8d6179e9418a7f6076487",
+    "n_layers": "1",
+    "personalization_vector": "3cfbd54e93981a123d3c6dcc2cddc9f41cc2bf2a81a6291350106940799396b4",
+    "restart_matrix": "34b182e710c07af450402f3131bd518e9bcea813085430adf77b0a04f6383f7e",
+    "transition_matrix": "e9ab21154c72cf8ad0b2ec7c513c8147dde9ba57be331ef379c59d0216253383"
+  }
+}

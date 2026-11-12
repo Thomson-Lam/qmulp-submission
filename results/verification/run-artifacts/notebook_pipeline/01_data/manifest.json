@@ -1,0 +1,270 @@
+{
+  "arm": "01_data",
+  "config": {
+    "alpha": 0.85,
+    "bootstrap_reps": 25,
+    "conv_min_spearman": 0.99,
+    "conv_min_tail_points": 20,
+    "conv_overlap_slack": 0.01,
+    "conv_sensitivity_l1": [
+      0.005,
+      0.01,
+      0.02
+    ],
+    "conv_sensitivity_spearman": [
+      0.98,
+      0.99,
+      0.995
+    ],
+    "conv_tau_max": {
+      "fmac": 2000,
+      "hmeq": 2000
+    },
+    "conv_tol_l1": 0.01,
+    "crossfit_folds": 2,
+    "d_tol": 1e-09,
+    "hardware_class_sweep": [
+      6,
+      4
+    ],
+    "hardware_density_matrix_max_bytes": 4294967296,
+    "hardware_instance_budget_seconds": 10800.0,
+    "hardware_max_register_width": 6,
+    "hardware_max_runtime_seconds": 300.0,
+    "hardware_min_fidelity_ratio": 0.5,
+    "hardware_min_tau": 2,
+    "hardware_noise_arms": [
+      "noiseless_shots",
+      "aer_noise_model",
+      "fake_marrakesh"
+    ],
+    "hardware_noise_band_draws": 1000,
+    "hardware_noise_band_quantiles": [
+      5.0,
+      95.0
+    ],
+    "hardware_optimization_level": 1,
+    "hardware_prior_bytes_per_second": 2000000000.0,
+    "hardware_shots": 256,
+    "hardware_statevector_max_register_width": 8,
+    "hardware_steps": [
+      1,
+      2
+    ],
+    "ibm_backend": "FakeMarrakesh",
+    "influence_type": "combined",
+    "mass_tol": 1e-09,
+    "master_seed": 42,
+    "n_placebo_permutations": 2,
+    "n_reference_resamples_fmac": 2,
+    "n_splits_hmeq": 2,
+    "overrides": [
+      "bootstrap_reps",
+      "conv_tau_max",
+      "crossfit_folds",
+      "hardware_class_sweep",
+      "hardware_shots",
+      "hardware_steps",
+      "n_placebo_permutations",
+      "n_reference_resamples_fmac",
+      "n_splits_hmeq",
+      "reduction_check_steps",
+      "bootstrap_reps",
+      "conv_tau_max",
+      "crossfit_folds",
+      "hardware_class_sweep",
+      "hardware_shots",
+      "hardware_steps",
+      "n_placebo_permutations",
+      "n_reference_resamples_fmac",
+      "n_splits_hmeq",
+      "reduction_check_steps"
+    ],
+    "phase_tol": 1e-09,
+    "primary_k": 100,
+    "quantum_score": "limit",
+    "reduction_check_steps": 4,
+    "router_tol": 1e-12,
+    "split_seed": 42,
+    "stickiness": 1.0,
+    "test_frac": 0.2,
+    "tie_tolerance": 12,
+    "top_k": [
+      10,
+      25,
+      50,
+      100
+    ]
+  },
+  "config_hash": "527bde5abebfa82029203a87c7ac12c603cf619c7fcd469394cddb5e733ca756",
+  "dataset": "hmeq",
+  "environment": {
+    "cores_available": 16,
+    "cpu": "AMD Ryzen 7 3700X 8-Core Processor",
+    "logical_cores": 16,
+    "omp_num_threads": null,
+    "os": "Linux-7.2.15-1-omarchy-x86_64-with-glibc2.44",
+    "physical_cores": 8,
+    "ram_gb": 31.2,
+    "smoke": true
+  },
+  "execution_mode": "preprocessing",
+  "extra": {
+    "blank_field_columns": [
+      "MORTDUE_was_missing",
+      "VALUE_was_missing",
+      "YOJ_was_missing",
+      "DEROG_was_missing",
+      "DELINQ_was_missing",
+      "CLAGE_was_missing",
+      "NINQ_was_missing",
+      "CLNO_was_missing",
+      "DEBTINC_was_missing",
+      "JOB_Missing",
+      "REASON_Missing"
+    ],
+    "bootstrap": {
+      "n_test": 1171,
+      "reps": 25,
+      "seed": 1882246996,
+      "stratified": true
+    },
+    "counts": {
+      "n_defaults": 1179,
+      "n_development": 4682,
+      "n_development_defaults": 943,
+      "n_raw_rows": 5960,
+      "n_retained": 5853,
+      "n_test": 1171,
+      "n_test_defaults": 236,
+      "n_unconnectable_dropped": 107
+    },
+    "dataset": "hmeq",
+    "expectation_differences": [],
+    "flag_counts": {
+      "blank_field": 2489,
+      "partially_observed": 317,
+      "structural_none": 0,
+      "unseen_level": 0
+    },
+    "imputation_medians": {
+      "CLAGE": 173.5,
+      "CLNO": 20.0,
+      "DEBTINC": 34.898413066,
+      "DELINQ": 0.0,
+      "DEROG": 0.0,
+      "LOAN": 16400.0,
+      "MORTDUE": 65451.0,
+      "NINQ": 1.0,
+      "VALUE": 89764.0,
+      "YOJ": 7.0
+    },
+    "layer_states": {
+      "JOB": 6,
+      "REASON": 2
+    },
+    "missing_flag_columns": [
+      "MORTDUE_was_missing",
+      "VALUE_was_missing",
+      "YOJ_was_missing",
+      "DEROG_was_missing",
+      "DELINQ_was_missing",
+      "CLAGE_was_missing",
+      "NINQ_was_missing",
+      "CLNO_was_missing",
+      "DEBTINC_was_missing"
+    ],
+    "processed_sha256": "f4c5d7f218349f6ed10f95f195d88e7c121c444fe805bb905ff9ac71f091436d",
+    "raw_sha256": "dfdbc2b7cdf728a15b53e323cde6127995715dfa6b178bd3c1e3d9916d0367aa",
+    "smoke": true,
+    "split": "stratified",
+    "unseen_level_columns": []
+  },
+  "git": {
+    "branch": "initial-submission",
+    "commit": "43847734bcbc618fa65ee8229c75ec401baa1eb8",
+    "dirty": false,
+    "dirty_files": []
+  },
+  "inputs": {
+    "data/hmeq.csv": {
+      "bytes": 403157,
+      "sha256": "dfdbc2b7cdf728a15b53e323cde6127995715dfa6b178bd3c1e3d9916d0367aa",
+      "status": "ok"
+    }
+  },
+  "output_dir": "results/outputs/notebook_pipeline/01_data",
+  "outputs": {
+    "data/hmeq_processed.parquet": {
+      "bytes": 156305,
+      "sha256": "f4c5d7f218349f6ed10f95f195d88e7c121c444fe805bb905ff9ac71f091436d",
+      "status": "ok"
+    },
+    "results/outputs/bootstrap_indices.npy": {
+      "bytes": 117228,
+      "sha256": "f1f0520ee11a54d5d729e70ce42d062d1d8fd0e08bf6eea492685484ac52768e",
+      "status": "ok"
+    },
+    "results/outputs/frozen_split.json": {
+      "bytes": 47934,
+      "sha256": "74341272b8834523153059dc03a0ee0de64aca9c125a79df0d8585ff8bff7d21",
+      "status": "ok"
+    },
+    "results/outputs/notebook_pipeline/01_data/cleaning_report.csv": {
+      "bytes": 365,
+      "sha256": "7233b93857f12dbbd7f8fbd76782b75ff08d5e3329f8adcb094096e304fe0aa7",
+      "status": "ok"
+    },
+    "results/outputs/notebook_pipeline/01_data/observation_flags.csv": {
+      "bytes": 309612,
+      "sha256": "7de77f5af06e070917cecef3ea5c2848d6e16d807ccb9e78828ac97dd280390a",
+      "status": "ok"
+    },
+    "results/outputs/results/hmeq/T1_data.csv": {
+      "bytes": 1559,
+      "sha256": "9eb12964f4e4da7dc8189a46b46b9a39f660dc03fd975eaed5845ac4749b6772",
+      "status": "ok"
+    }
+  },
+  "peak_rss_bytes": 461852672,
+  "seeds": {
+    "bootstrap_seed": 1882246996,
+    "split_seed": 42
+  },
+  "source_sha256": "7ab978246ac5eee0c6addd1a4177ba9f131d4dd4e26c5452e48fffe5cafed2b9",
+  "started_utc": "2026-11-12T14:34:29Z",
+  "tables": {
+    "T1_data": {
+      "absent": [],
+      "columns": {
+        "dataset": "dataset name",
+        "key": "quantity name (see the note column)",
+        "note": "what the quantity is",
+        "value": "the counted value, as text (counts, rates, names and the split description share one column)"
+      },
+      "n_rows": 25,
+      "path": "results/outputs/results/hmeq/T1_data.csv",
+      "scope": "hmeq",
+      "source_stage": "01_data",
+      "undocumented": []
+    }
+  },
+  "versions": {
+    "matplotlib": "3.10.9",
+    "nbclient": "0.10.4",
+    "nbformat": "5.10.4",
+    "numpy": "2.4.2",
+    "pandas": "3.0.0",
+    "polars": "1.37.1",
+    "pyarrow": "24.0.0",
+    "python": "3.12.13",
+    "qiskit": "2.5.0",
+    "qiskit-aer": "0.17.2",
+    "qiskit-ibm-runtime": "0.47.0",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.0",
+    "threadpoolctl": "3.6.0",
+    "xgboost": "3.2.0"
+  },
+  "wall_seconds": 0.185
+}

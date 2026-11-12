@@ -1,0 +1,22 @@
+................................................ss.................s.... [ 36%]
+..........s...........................s.........................s....... [ 72%]
+...................................s...ss.......sss...                   [100%]
+=============================== warnings summary ===============================
+tests/test_circuits.py: 13 warnings
+tests/test_noise_grid.py: 2 warnings
+  <venv>/lib/python3.12/site-packages/stevedore/extension.py:340: DeprecationWarning: Since backends now support running jobs that contain both fractional gates and dynamic circuit, IBMFractionalTranslationPlugin is deprecated as of qiskit-ibm-runtime 0.42.0 and will be removed no sooner than 3 months after the release date. Use IBMDynamicFractionalTranslationPlugin instead.
+    obj = plugin(*invoke_args, **invoke_kwds)
+
+tests/test_circuits.py::AerLayerTests::test_layers_are_distributions_over_retained_nodes_with_padding_reported
+tests/test_circuits.py::AerLayerTests::test_layers_are_distributions_over_retained_nodes_with_padding_reported
+tests/test_circuits.py::AerLayerTests::test_layers_are_distributions_over_retained_nodes_with_padding_reported
+tests/test_circuits.py::AerLayerTests::test_layers_are_distributions_over_retained_nodes_with_padding_reported
+tests/test_circuits.py::AerLayerTests::test_layers_are_distributions_over_retained_nodes_with_padding_reported
+tests/test_circuits.py::AerLayerTests::test_layers_are_distributions_over_retained_nodes_with_padding_reported
+tests/test_circuits.py::AerLayerTests::test_layers_are_distributions_over_retained_nodes_with_padding_reported
+tests/test_circuits.py::AerLayerTests::test_layers_are_distributions_over_retained_nodes_with_padding_reported
+  <python-runtime>/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=18973) is multi-threaded, use of fork() may lead to deadlocks in the child.
+    self.pid = os.fork()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+186 passed, 12 skipped, 23 warnings in 23.17s

@@ -1,0 +1,12 @@
+smoke=True
+task 0: noise grid of the full instance (6 of 6 classes)
+instance top_6_classes: m=4, touched physical qubits=8, two-qubit gates at tau=2: 2943, transpile 0 s, route D_bar
+117f5a1abadce19179700920d05cfc6aaa410953ef0f07ef09d7a93d665f087e  outputs/notebook_pipeline/06_hardware/grid_shards/grid_6.json
+smoke=True
+task 1: noise grid of the top_4_classes instance (4 of 6 classes)
+instance top_4_classes: m=4, touched physical qubits=8, two-qubit gates at tau=2: 3574, transpile 0 s, route D_bar
+257fc2bca8e9815773605131d73dfd7cbf4e2f5da650cfc3980944ba1fde5749  outputs/notebook_pipeline/06_hardware/grid_shards/grid_4.json
+== stage 06 hmeq: noise grid
+== stage 06 hmeq: 06_hardware.ipynb
+ 06grid:hmeq:     113.7 s
+     06:hmeq:      87.3 s

@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local datasets: retain acquisition and licensing instructions in data/README.md.
+/data/hmeq.csv
+/data/*_processed.parquet
+
+# Active generated outputs and historical exports without paper provenance.
+/results/outputs/
+/results/canonical-data-outputs/
+/results/canonical-outputs/
+/results/verification/install.log
+
+# Retain only the audited compact smoke-run evidence from saved artifacts.
+/results/verification/run-artifacts/**
+!/results/verification/run-artifacts/**/
+!/results/verification/run-artifacts/notebook_pipeline/*/manifest.json
+!/results/verification/run-artifacts/notebook_pipeline/03_classical/operator_digests.json
+!/results/verification/run-artifacts/results/hmeq/*.csv
+!/results/verification/run-artifacts/timings/*.json

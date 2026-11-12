@@ -1,0 +1,6 @@
+== stage 01 hmeq: 01_hmeq_cleaning.ipynb
+== stage 02 hmeq: 02_network.ipynb
+== stage 03 hmeq: 03_classical.ipynb
+     01:hmeq:       2.3 s
+     02:hmeq:      10.6 s
+     03:hmeq:       3.7 s

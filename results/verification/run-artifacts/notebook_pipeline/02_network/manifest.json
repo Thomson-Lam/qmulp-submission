@@ -1,0 +1,301 @@
+{
+  "arm": "02_network",
+  "config": {
+    "alpha": 0.85,
+    "bootstrap_reps": 25,
+    "conv_min_spearman": 0.99,
+    "conv_min_tail_points": 20,
+    "conv_overlap_slack": 0.01,
+    "conv_sensitivity_l1": [
+      0.005,
+      0.01,
+      0.02
+    ],
+    "conv_sensitivity_spearman": [
+      0.98,
+      0.99,
+      0.995
+    ],
+    "conv_tau_max": {
+      "fmac": 2000,
+      "hmeq": 2000
+    },
+    "conv_tol_l1": 0.01,
+    "crossfit_folds": 2,
+    "d_tol": 1e-09,
+    "hardware_class_sweep": [
+      6,
+      4
+    ],
+    "hardware_density_matrix_max_bytes": 4294967296,
+    "hardware_instance_budget_seconds": 10800.0,
+    "hardware_max_register_width": 6,
+    "hardware_max_runtime_seconds": 300.0,
+    "hardware_min_fidelity_ratio": 0.5,
+    "hardware_min_tau": 2,
+    "hardware_noise_arms": [
+      "noiseless_shots",
+      "aer_noise_model",
+      "fake_marrakesh"
+    ],
+    "hardware_noise_band_draws": 1000,
+    "hardware_noise_band_quantiles": [
+      5.0,
+      95.0
+    ],
+    "hardware_optimization_level": 1,
+    "hardware_prior_bytes_per_second": 2000000000.0,
+    "hardware_shots": 256,
+    "hardware_statevector_max_register_width": 8,
+    "hardware_steps": [
+      1,
+      2
+    ],
+    "ibm_backend": "FakeMarrakesh",
+    "influence_type": "combined",
+    "mass_tol": 1e-09,
+    "master_seed": 42,
+    "n_placebo_permutations": 2,
+    "n_reference_resamples_fmac": 2,
+    "n_splits_hmeq": 2,
+    "overrides": [
+      "bootstrap_reps",
+      "conv_tau_max",
+      "crossfit_folds",
+      "hardware_class_sweep",
+      "hardware_shots",
+      "hardware_steps",
+      "n_placebo_permutations",
+      "n_reference_resamples_fmac",
+      "n_splits_hmeq",
+      "reduction_check_steps",
+      "bootstrap_reps",
+      "conv_tau_max",
+      "crossfit_folds",
+      "hardware_class_sweep",
+      "hardware_shots",
+      "hardware_steps",
+      "n_placebo_permutations",
+      "n_reference_resamples_fmac",
+      "n_splits_hmeq",
+      "reduction_check_steps"
+    ],
+    "phase_tol": 1e-09,
+    "primary_k": 100,
+    "quantum_score": "limit",
+    "reduction_check_steps": 4,
+    "router_tol": 1e-12,
+    "split_seed": 42,
+    "stickiness": 1.0,
+    "test_frac": 0.2,
+    "tie_tolerance": 12,
+    "top_k": [
+      10,
+      25,
+      50,
+      100
+    ]
+  },
+  "config_hash": "527bde5abebfa82029203a87c7ac12c603cf619c7fcd469394cddb5e733ca756",
+  "dataset": "hmeq",
+  "environment": {
+    "cores_available": 16,
+    "cpu": "AMD Ryzen 7 3700X 8-Core Processor",
+    "logical_cores": 16,
+    "omp_num_threads": null,
+    "os": "Linux-7.2.15-1-omarchy-x86_64-with-glibc2.44",
+    "physical_cores": 8,
+    "ram_gb": 31.2,
+    "smoke": true
+  },
+  "execution_mode": "analysis",
+  "extra": {
+    "dataset": "hmeq",
+    "layer_states": {
+      "JOB": 6,
+      "REASON": 2
+    },
+    "lumpability_check": {
+      "masking": "test operator (test labels hidden)",
+      "max_abs_error_class_vs_member_sum": 9.020562075079397e-16,
+      "max_abs_error_unfolded_vs_full": 2.2768245622195593e-17,
+      "n_supra_nodes_full": 11722,
+      "n_supra_nodes_lumped": 116,
+      "passed": true,
+      "spec": "NET_2L",
+      "tolerance": 1e-08
+    },
+    "networks": [
+      "NET_JOB",
+      "NET_REASON",
+      "NET_2L"
+    ],
+    "resource_plan_status": "measured: 7.91 s per recorded step on the NET_JOB masked test operator at N = 5,859, single-threaded, 2026-09-03; scaled as N^2 to every row",
+    "smoke": true,
+    "step_time_calibration": {
+      "N": 5855,
+      "measured_over_planned": 0.32686638327735396,
+      "measured_seconds_per_step": 2.5819839836666083,
+      "n_steps_timed": 3,
+      "network": "NET_REASON",
+      "plan_constant": "measured: 7.91 s per recorded step on the NET_JOB masked test operator at N = 5,859, single-threaded, 2026-09-03; scaled as N^2 to every row",
+      "planned_seconds_per_step": 7.899203208901826,
+      "status": "measured",
+      "step_seconds": [
+        3.085,
+        2.48,
+        2.181
+      ]
+    }
+  },
+  "git": {
+    "branch": "initial-submission",
+    "commit": "43847734bcbc618fa65ee8229c75ec401baa1eb8",
+    "dirty": false,
+    "dirty_files": []
+  },
+  "inputs": {
+    "data/hmeq_processed.parquet": {
+      "bytes": 156305,
+      "sha256": "f4c5d7f218349f6ed10f95f195d88e7c121c444fe805bb905ff9ac71f091436d",
+      "status": "ok"
+    },
+    "results/outputs/frozen_split.json": {
+      "bytes": 47934,
+      "sha256": "74341272b8834523153059dc03a0ee0de64aca9c125a79df0d8585ff8bff7d21",
+      "status": "ok"
+    }
+  },
+  "output_dir": "results/outputs/notebook_pipeline/02_network",
+  "outputs": {
+    "results/outputs/notebook_pipeline/02_network/degree_distribution_NET_2L.csv": {
+      "bytes": 107,
+      "sha256": "15fc10f795f0effca37cdb73483dfd60c97515f59ae6a771f58e4fc679a0bf54",
+      "status": "ok"
+    },
+    "results/outputs/notebook_pipeline/02_network/degree_distribution_NET_JOB.csv": {
+      "bytes": 82,
+      "sha256": "93bbb248315f19ca241cd40377171dd5161982452e3b9d32d93bb223bbdb8dec",
+      "status": "ok"
+    },
+    "results/outputs/notebook_pipeline/02_network/degree_distribution_NET_REASON.csv": {
+      "bytes": 50,
+      "sha256": "85391642f17170afcf7712f725f37b75f883a436f429969e0e7ea7256d1c8b48",
+      "status": "ok"
+    },
+    "results/outputs/notebook_pipeline/02_network/layer_edge_coverage.csv": {
+      "bytes": 157,
+      "sha256": "5d39e3ee979050c6700e7c4ccb8ea238f6219dd4029f364900f541f4858b88cb",
+      "status": "ok"
+    },
+    "results/outputs/notebook_pipeline/02_network/lumpability_check.json": {
+      "bytes": 297,
+      "sha256": "e1a806ca1a05515275e08397b41977ce64a402c461b6a1938dbae922e59845e8",
+      "status": "ok"
+    },
+    "results/outputs/notebook_pipeline/02_network/lumped_edges_NET_2L.csv": {
+      "bytes": 7904,
+      "sha256": "ba2d0471d08e58b6451bfc715371e3df7287f639760a7252b06062005c36aa4e",
+      "status": "ok"
+    },
+    "results/outputs/notebook_pipeline/02_network/lumped_edges_NET_JOB.csv": {
+      "bytes": 1020,
+      "sha256": "b048fe506c82e55fc7fca98b29dc2a5581e83d0bb5ec3b68be052687c761fad2",
+      "status": "ok"
+    },
+    "results/outputs/notebook_pipeline/02_network/lumped_edges_NET_REASON.csv": {
+      "bytes": 386,
+      "sha256": "2ebde40a0dd48a9ea1e5caafc64be75da0f58ba47d64c6f32d1a238fcf2de0c3",
+      "status": "ok"
+    },
+    "results/outputs/notebook_pipeline/02_network/lumped_nodes_NET_2L.csv": {
+      "bytes": 63689,
+      "sha256": "1b3a00d887a792997c810956952153b4c3cfb24b4c02b24922ecc5a270215724",
+      "status": "ok"
+    },
+    "results/outputs/notebook_pipeline/02_network/lumped_nodes_NET_JOB.csv": {
+      "bytes": 29688,
+      "sha256": "ea4fbe4bab2005fcbf0661bc8c2de4c64495d5579b58b119a45573857732d457",
+      "status": "ok"
+    },
+    "results/outputs/notebook_pipeline/02_network/lumped_nodes_NET_REASON.csv": {
+      "bytes": 28920,
+      "sha256": "18f4c1cffdc82485b680ce09f06495ab36afe9c6619ebb49a59dbb6044621c28",
+      "status": "ok"
+    },
+    "results/outputs/notebook_pipeline/02_network/network_facts.json": {
+      "bytes": 9812,
+      "sha256": "1b348396af5b87b1bdc73073fb50c00ed95967e723f90af9e4484e8309a1063f",
+      "status": "ok"
+    },
+    "results/outputs/notebook_pipeline/02_network/network_summary.csv": {
+      "bytes": 513,
+      "sha256": "af67fbc098a72587bbab16befd11cbac245c85e8db1bb6dcb07f97046265dd75",
+      "status": "ok"
+    },
+    "results/outputs/notebook_pipeline/02_network/resource_plan.csv": {
+      "bytes": 858,
+      "sha256": "ea5d082ee7c49b544996bf2819ab9535c48487fba4c63d2274156f9ee17fcc76",
+      "status": "ok"
+    },
+    "results/outputs/results/hmeq/network_summary.csv": {
+      "bytes": 513,
+      "sha256": "af67fbc098a72587bbab16befd11cbac245c85e8db1bb6dcb07f97046265dd75",
+      "status": "ok"
+    }
+  },
+  "peak_rss_bytes": 2105991168,
+  "seeds": {
+    "master_seed": 42
+  },
+  "source_sha256": "7ab978246ac5eee0c6addd1a4177ba9f131d4dd4e26c5452e48fffe5cafed2b9",
+  "started_utc": "2026-11-12T14:34:31Z",
+  "tables": {
+    "network_summary": {
+      "absent": [],
+      "columns": {
+        "N": "supra-nodes of the full operator (slots included)",
+        "borrowers_covered": "individuals the lumped operator covers",
+        "category_nodes": "category nodes over the layers",
+        "induced_distinct_levels": "distinct category states occupied",
+        "logical_qubits_2m": "logical qubits 2 m",
+        "lumped_classes": "lumping classes",
+        "lumped_seed_classes": "reference classes",
+        "lumped_supra_nodes": "supra-nodes of the lumped operator",
+        "max_degree": "maximal degree",
+        "max_distinct_levels": "level ceiling: distinct category states the layers can induce",
+        "mean_degree": "mean degree",
+        "n_borrowers": "individuals",
+        "n_dangling": "dangling columns",
+        "n_edges": "edges",
+        "n_layers": "layers L",
+        "network": "network name",
+        "register_width_m": "register width m",
+        "statevector_kib": "statevector size in KiB"
+      },
+      "n_rows": 3,
+      "path": "results/outputs/results/hmeq/network_summary.csv",
+      "scope": "hmeq",
+      "source_stage": "02_network",
+      "undocumented": []
+    }
+  },
+  "versions": {
+    "matplotlib": "3.10.9",
+    "nbclient": "0.10.4",
+    "nbformat": "5.10.4",
+    "numpy": "2.4.2",
+    "pandas": "3.0.0",
+    "polars": "1.37.1",
+    "pyarrow": "24.0.0",
+    "python": "3.12.13",
+    "qiskit": "2.5.0",
+    "qiskit-aer": "0.17.2",
+    "qiskit-ibm-runtime": "0.47.0",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.0",
+    "threadpoolctl": "3.6.0",
+    "xgboost": "3.2.0"
+  },
+  "wall_seconds": 9.617
+}

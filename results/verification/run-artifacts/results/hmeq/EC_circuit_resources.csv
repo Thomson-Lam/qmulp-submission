@@ -1,0 +1,4 @@
+dataset,instance,classes,R,m,logical_qubits,borrowers,gbar_density,max_column_support,fraction_columns_full_reference_support,state_prep_angles,two_qubit_logical_analytic,two_qubit_logical_transpiled,n_masked_groups,route,lumpability_residual,compatibility_residual
+hmeq,full,54,116,7,14,5853,0.23587990487514862,50,0.6896551724137931,16256,32631,,18,D_bar,5.2735593669694936e-15,1.6653345369377348e-16
+hmeq,top_6_classes,6,15,4,8,2320,0.35555555555555557,8,0.7333333333333333,240,524,506,2,D_bar,9.880984919163893e-15,2.7755575615628914e-16
+hmeq,top_4_classes,4,11,4,8,1772,0.4297520661157025,6,0.6363636363636364,240,524,506,1,D_bar,9.880984919163893e-15,1.7208456881689926e-15

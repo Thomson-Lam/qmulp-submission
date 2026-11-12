@@ -1,0 +1,567 @@
+{
+  "arm": "06_hardware",
+  "config": {
+    "alpha": 0.85,
+    "bootstrap_reps": 25,
+    "conv_min_spearman": 0.99,
+    "conv_min_tail_points": 20,
+    "conv_overlap_slack": 0.01,
+    "conv_sensitivity_l1": [
+      0.005,
+      0.01,
+      0.02
+    ],
+    "conv_sensitivity_spearman": [
+      0.98,
+      0.99,
+      0.995
+    ],
+    "conv_tau_max": {
+      "fmac": 2000,
+      "hmeq": 2000
+    },
+    "conv_tol_l1": 0.01,
+    "crossfit_folds": 2,
+    "d_tol": 1e-09,
+    "hardware_class_sweep": [
+      6,
+      4
+    ],
+    "hardware_density_matrix_max_bytes": 4294967296,
+    "hardware_instance_budget_seconds": 10800.0,
+    "hardware_max_register_width": 6,
+    "hardware_max_runtime_seconds": 300.0,
+    "hardware_min_fidelity_ratio": 0.5,
+    "hardware_min_tau": 2,
+    "hardware_noise_arms": [
+      "noiseless_shots",
+      "aer_noise_model",
+      "fake_marrakesh"
+    ],
+    "hardware_noise_band_draws": 1000,
+    "hardware_noise_band_quantiles": [
+      5.0,
+      95.0
+    ],
+    "hardware_optimization_level": 1,
+    "hardware_prior_bytes_per_second": 2000000000.0,
+    "hardware_shots": 256,
+    "hardware_statevector_max_register_width": 8,
+    "hardware_steps": [
+      1,
+      2
+    ],
+    "ibm_backend": "FakeMarrakesh",
+    "influence_type": "combined",
+    "mass_tol": 1e-09,
+    "master_seed": 42,
+    "n_placebo_permutations": 2,
+    "n_reference_resamples_fmac": 2,
+    "n_splits_hmeq": 2,
+    "overrides": [
+      "bootstrap_reps",
+      "conv_tau_max",
+      "crossfit_folds",
+      "hardware_class_sweep",
+      "hardware_shots",
+      "hardware_steps",
+      "n_placebo_permutations",
+      "n_reference_resamples_fmac",
+      "n_splits_hmeq",
+      "reduction_check_steps",
+      "bootstrap_reps",
+      "conv_tau_max",
+      "crossfit_folds",
+      "hardware_class_sweep",
+      "hardware_shots",
+      "hardware_steps",
+      "n_placebo_permutations",
+      "n_reference_resamples_fmac",
+      "n_splits_hmeq",
+      "reduction_check_steps"
+    ],
+    "phase_tol": 1e-09,
+    "primary_k": 100,
+    "quantum_score": "limit",
+    "reduction_check_steps": 4,
+    "router_tol": 1e-12,
+    "split_seed": 42,
+    "stickiness": 1.0,
+    "test_frac": 0.2,
+    "tie_tolerance": 12,
+    "top_k": [
+      10,
+      25,
+      50,
+      100
+    ]
+  },
+  "config_hash": "527bde5abebfa82029203a87c7ac12c603cf619c7fcd469394cddb5e733ca756",
+  "dataset": "hmeq",
+  "environment": {
+    "cores_available": 16,
+    "cpu": "AMD Ryzen 7 3700X 8-Core Processor",
+    "logical_cores": 16,
+    "omp_num_threads": null,
+    "os": "Linux-7.2.15-1-omarchy-x86_64-with-glibc2.44",
+    "physical_cores": 8,
+    "ram_gb": 31.2,
+    "smoke": true
+  },
+  "execution_mode": "fake_backend",
+  "extra": {
+    "arms": {
+      "aer_noise_model": "Aer density-matrix simulation of the ISA circuits under a generic model: depolarizing error on every one-qubit gate (rz included) at the target's median one-qubit error, depolarizing error on every two-qubit gate at its median two-qubit error, and a symmetric readout error at its median readout error; no thermal relaxation",
+      "exact": "the exact lumped time average of the walk, by the coefficient recurrence on the retained operator (NumPy; no circuit)",
+      "fake_marrakesh": "Aer density-matrix simulation of the ISA circuits under NoiseModel.from_backend on the FakeMarrakesh calibration snapshot: per-gate depolarizing and thermal-relaxation errors and per-qubit readout errors",
+      "noiseless_shots": "Aer sampling of the ideal ISA circuits: shot noise only (statevector of the touched qubits, config.hardware_shots shots per circuit)"
+    },
+    "backend_snapshot": {
+      "backend_name": "FakeMarrakesh",
+      "backend_version": "1.0.7",
+      "basis_gates": [
+        "cz",
+        "delay",
+        "for_loop",
+        "id",
+        "if_else",
+        "measure",
+        "reset",
+        "rz",
+        "switch_case",
+        "sx",
+        "x"
+      ],
+      "calibration_date": "2025-02-26",
+      "calibration_timestamp": "2025-02-26 14:52:45-05:00",
+      "native_two_qubit_gates": [
+        "cz"
+      ],
+      "num_qubits": 156,
+      "qiskit_ibm_runtime": "0.47.0"
+    },
+    "dataset": "hmeq",
+    "device_model": {
+      "backend_name": "FakeMarrakesh",
+      "basis_gates": [
+        "cz",
+        "delay",
+        "for_loop",
+        "id",
+        "if_else",
+        "measure",
+        "reset",
+        "rz",
+        "switch_case",
+        "sx",
+        "x"
+      ],
+      "calibration_warning": null,
+      "default_rep_delay_s": 0.00025,
+      "max_circuits_per_job": 300,
+      "max_shots_per_circuit": 100000,
+      "native_two_qubit_gates": [
+        "cz"
+      ],
+      "num_qubits": 156,
+      "one_qubit_duration_s": 3.6e-08,
+      "one_qubit_error": 0.00018757793334272916,
+      "processor_family": "Heron",
+      "processor_revision": "2",
+      "readout_duration_s": 2.584e-06,
+      "readout_error": 0.009521484375,
+      "two_qubit_duration_s": 6.8e-08,
+      "two_qubit_error": 0.003294753646418097
+    },
+    "growth_rule": "nested connected growth from the reference class with the most restart mass, adding at each step the class sharing the most category nodes with the retained set (ties: larger restart mass, then key order); quantum.hardware.class_candidates.grow_connected_classes",
+    "incomplete_shards": [],
+    "instances": [
+      {
+        "R": 116,
+        "borrowers": 5853,
+        "k": 54,
+        "label": "full",
+        "m": 7,
+        "n_masked_groups": 18,
+        "route": "D_bar",
+        "simulated": false
+      },
+      {
+        "R": 15,
+        "borrowers": 2320,
+        "k": 6,
+        "label": "top_6_classes",
+        "m": 4,
+        "n_masked_groups": 2,
+        "route": "D_bar",
+        "simulated": true
+      },
+      {
+        "R": 11,
+        "borrowers": 1772,
+        "k": 4,
+        "label": "top_4_classes",
+        "m": 4,
+        "n_masked_groups": 1,
+        "route": "D_bar",
+        "simulated": true
+      }
+    ],
+    "n_cells_filled": 0,
+    "noise_entry_points": {
+      "aer_noise_model": {
+        "arm": "aer_noise_model",
+        "evaluated_k": [
+          4,
+          6
+        ],
+        "judged_tau": {
+          "4": 2,
+          "6": 2
+        },
+        "k_with_signal": [
+          6
+        ],
+        "noise_k_band": "none",
+        "noise_tau_band": 2,
+        "selected_k": 4
+      },
+      "fake_marrakesh": {
+        "arm": "fake_marrakesh",
+        "evaluated_k": [
+          4,
+          6
+        ],
+        "judged_tau": {
+          "4": 2,
+          "6": 2
+        },
+        "k_with_signal": [
+          4
+        ],
+        "noise_k_band": 6,
+        "noise_tau_band": "> 2",
+        "selected_k": 4
+      }
+    },
+    "padding_convention": "padding codes carry uniform columns in G_pad (quantum.hardware.structured_circuit); measured mass on padding codes is removed and the retained support renormalised",
+    "rankable_instance": {
+      "hw_rankable_borrowers": 2320,
+      "hw_rankable_fr": 0.007522541215203016,
+      "hw_rankable_k": 6,
+      "hw_rankable_m": 4,
+      "hw_rankable_signal": false
+    },
+    "readout_calibration": "Readout calibration is per circuit. Routing places the measured (source) register on different physical qubits in different per-step circuits, so the circuits are grouped by their measured-qubit tuple; each distinct tuple gets one calibration set (the baseline circuit and one single-flip circuit per measured qubit, transpiled onto exactly those qubits and run on the arm's own simulator) and every circuit is mitigated with the set of its own tuple. The shard records the tuples and the index of the set each circuit used (circuit_to_calibration).",
+    "selection": {
+      "flag": "cannot rank test borrowers",
+      "n_candidates": 2,
+      "rule": "max fidelity_ratio under fake_marrakesh at tau >= 2; n_masked_groups >= 2 if any such instance reaches 0.5; estimated QPU <= 300.0 s; m <= 6",
+      "selected": {
+        "R": 11,
+        "borrowers": 1772,
+        "depth_max": 7235,
+        "estimated_qpu_seconds": 0.9321052160000001,
+        "fidelity_ratio": 0.15999806574939246,
+        "instance": "top_4_classes",
+        "k_classes": 4,
+        "m": 4,
+        "n_calibration_sets": 2,
+        "n_masked_groups": 1,
+        "predicted_survival_min": 1.1442197186369395e-06,
+        "route": "D_bar",
+        "tau": 2,
+        "tv_uniform": 0.2929625587969395,
+        "two_qubit_sum": 4299
+      }
+    },
+    "shard_schema_version": 2,
+    "smoke": true,
+    "statevector": {
+      "R": 116,
+      "T": 8,
+      "budget_seconds": 60.0,
+      "dataset": "hmeq",
+      "logical_qubits": 14,
+      "m": 7,
+      "max_abs_error": 7.0915495697931874e-15,
+      "probe_seconds": 11.165952543000003,
+      "status": "ran",
+      "wall_seconds": 65.67114668099975
+    }
+  },
+  "git": {
+    "branch": "initial-submission",
+    "commit": "43847734bcbc618fa65ee8229c75ec401baa1eb8",
+    "dirty": false,
+    "dirty_files": []
+  },
+  "inputs": {
+    "data/hmeq_processed.parquet": {
+      "bytes": 156305,
+      "sha256": "f4c5d7f218349f6ed10f95f195d88e7c121c444fe805bb905ff9ac71f091436d",
+      "status": "ok"
+    },
+    "results/outputs/frozen_split.json": {
+      "bytes": 47934,
+      "sha256": "74341272b8834523153059dc03a0ee0de64aca9c125a79df0d8585ff8bff7d21",
+      "status": "ok"
+    }
+  },
+  "output_dir": "results/outputs/notebook_pipeline/06_hardware",
+  "outputs": {
+    "results/outputs/notebook_pipeline/06_hardware/hardware_candidates.json": {
+      "bytes": 6724,
+      "sha256": "68504aafb234d22187345c0b184cf79e56aef27b0d11cd1d90b666db8a4c6426",
+      "status": "ok"
+    },
+    "results/outputs/results/hmeq/EC_circuit_resources.csv": {
+      "bytes": 680,
+      "sha256": "f7cbfcdcf0f27d29c3cb4b64a5e0e82c23792aa9616bef48516d3dbe978dba39",
+      "status": "ok"
+    },
+    "results/outputs/results/hmeq/EC_hardware_scores.csv": {
+      "bytes": 1790,
+      "sha256": "9ca68061ab69afd67d25c860a06dd75ded8ad8fc22aad4d0cb2ea367447aadbd",
+      "status": "ok"
+    },
+    "results/outputs/results/hmeq/EC_noise_grid.csv": {
+      "bytes": 12121,
+      "sha256": "979b8c1e4ceb4600e685b76670bebd3cdbafe2bcff17b687d9bf5b329d639d86",
+      "status": "ok"
+    },
+    "results/outputs/results/hmeq/EC_statevector.csv": {
+      "bytes": 177,
+      "sha256": "d89bbba93902b98c2d4ea01684ad05a34b1323ccaba10ecadb83f195daa159f6",
+      "status": "ok"
+    },
+    "results/outputs/results/hmeq/T6_hardware.csv": {
+      "bytes": 717,
+      "sha256": "917befd6f5a2c8ca6029e3deb10ae5bd7b420bef6c55aa1b7ef69f4127d73836",
+      "status": "ok"
+    },
+    "results/outputs/results/hmeq/T6_hardware_header.csv": {
+      "bytes": 598,
+      "sha256": "7793df355174fae10bae26268fa7e2b80c598345724afe3c5542526ec33bf409",
+      "status": "ok"
+    }
+  },
+  "peak_rss_bytes": 6910472192,
+  "seeds": {
+    "aer": "config.seed_aer(dataset, k, tau, arm, t)",
+    "master_seed": 42,
+    "noise_band": "config.seed_noise_band(dataset, k)",
+    "transpiler": "config.seed_transpiler(dataset, k)"
+  },
+  "source_sha256": "7ab978246ac5eee0c6addd1a4177ba9f131d4dd4e26c5452e48fffe5cafed2b9",
+  "started_utc": "2026-11-12T14:34:48Z",
+  "tables": {
+    "EC_circuit_resources": {
+      "absent": [],
+      "columns": {
+        "R": "supra-nodes of the (retained) lumped operator",
+        "borrowers": "borrowers the instance covers",
+        "classes": "lumping classes",
+        "compatibility_residual": "max |D B - B D_bar| of the same pair",
+        "dataset": "dataset name",
+        "fraction_columns_full_reference_support": "share of columns with support on every reference copy",
+        "gbar_density": "share of non-zero entries of G_bar",
+        "instance": "full lumped operator or a nested retained instance (label)",
+        "logical_qubits": "logical qubits 2 m",
+        "lumpability_residual": "max |C G - G_bar C| of the retained operator against the member-level operator of the same classes",
+        "m": "register width ceil(log2 R)",
+        "max_column_support": "largest column support of G_bar",
+        "n_masked_groups": "distinct masked classes the instance retains",
+        "route": "discriminant the router selects for the retained operator against its member-level operator (D_bar or H); null when the instance was not simulated (not routed)",
+        "state_prep_angles": "multiplexed state-preparation angles 2^m (2^m - 1)",
+        "two_qubit_logical_analytic": "analytic two-qubit count of one reflection--swap",
+        "two_qubit_logical_transpiled": "two-qubit count of one logical step after a basis transpilation (no routing), where m allows it"
+      },
+      "n_rows": 3,
+      "path": "results/outputs/results/hmeq/EC_circuit_resources.csv",
+      "scope": "hmeq",
+      "source_stage": "06_hardware",
+      "undocumented": []
+    },
+    "EC_hardware_scores": {
+      "absent": [],
+      "columns": {
+        "aer_noise_model": "time-averaged measured probability under the aer_noise_model arm (raw); null when the cell was not simulated",
+        "aer_noise_model_mitigated": "the same after per-circuit readout mitigation (aer_noise_model)",
+        "dataset": "dataset name",
+        "exact": "exact time-averaged source probability at the selected tau",
+        "fake_marrakesh": "time-averaged measured probability under the fake_marrakesh arm (raw); null when the cell was not simulated",
+        "fake_marrakesh_mitigated": "the same after per-circuit readout mitigation (fake_marrakesh)",
+        "label": "the node's label in the lumped graph",
+        "layer_index": "layer of a borrower copy (null for a category node)",
+        "node_type": "borrower_copy or category",
+        "noiseless_shots": "time-averaged measured probability under the noiseless_shots arm (raw); null when the cell was not simulated",
+        "supra_node": "supra-node index of the retained instance (the row of its lumped node table)"
+      },
+      "n_rows": 11,
+      "path": "results/outputs/results/hmeq/EC_hardware_scores.csv",
+      "scope": "hmeq",
+      "source_stage": "06_hardware",
+      "undocumented": []
+    },
+    "EC_noise_grid": {
+      "absent": [],
+      "columns": {
+        "R": "supra-nodes of the instance",
+        "active_qubits": "physical qubits the routed circuits touch (max over t < tau)",
+        "arm": "noiseless_shots, aer_noise_model or fake_marrakesh; the arms are defined in the instance record (hardware_candidates.json, 'arms') and the manifest",
+        "basis": "native two-qubit gates of the target",
+        "borrowers": "borrowers covered",
+        "budget_seconds": "config.hardware_instance_budget_seconds",
+        "compatibility_residual": "max |D B - B D_bar| of the retained operator",
+        "dataset": "dataset name",
+        "depth_max": "maximal transpiled depth over the circuits t < tau",
+        "estimated_gates": "ISA gates summed over the circuits t < tau (the work of the cell)",
+        "estimated_qpu_seconds": "ESTIMATED QPU seconds of a hand-run submission of this cell: shots x sum over the walk circuits and one calibration set per distinct measured-qubit tuple of (depth x two-qubit duration + readout + repetition delay)",
+        "estimated_simulation_seconds": "estimated wall seconds of the cell, decided before it ran: ISA gates x state bytes x the arm's measured seconds per gate and byte (that of its kind, or config.hardware_prior_bytes_per_second, before the arm has run); wall_seconds is what it took",
+        "estimated_state_bytes": "bytes of the simulated state at the touched-qubit width (16 * 4^n density matrix, 16 * 2^n statevector)",
+        "estimated_two_qubit_logical": "analytic logical two-qubit gates of one reflection--swap, for an instance wider than the register cap",
+        "fidelity_ratio": "1 - TV / TV_uniform",
+        "instance": "instance label",
+        "k_classes": "classes of the retained instance",
+        "lumpability_residual": "max |C G - G_bar C| of the retained operator",
+        "m": "register width",
+        "mitigated": "whether per-circuit readout mitigation was applied to the arm's counts (noisy arms only)",
+        "n_calibration_sets": "distinct measured-qubit tuples among the circuits t < tau, i.e. calibration sets used (per-circuit calibration)",
+        "n_masked_groups": "distinct masked classes",
+        "noise": "what the arm simulates; for aer_noise_model: depolarizing 1q/2q errors and a symmetric readout error at the FakeMarrakesh medians, no thermal relaxation; for fake_marrakesh: its calibration-derived model; for noiseless_shots: no noise",
+        "optimization_level": "preset pass-manager level",
+        "padding_mass": "mean measured mass on padding codes (removed and the rest renormalised)",
+        "predicted_survival_min": "conservative predicted survival (every one-qubit gate at the one-qubit median), min over the circuits",
+        "pure_noise_fidelity_hi": "upper quantile of the same distribution; a raw cell carries signal when its fidelity_ratio is above this",
+        "pure_noise_fidelity_lo": "lower quantile of the fidelity ratio of a pure-noise output against this instance's exact average",
+        "pure_noise_spearman_hi": "upper quantile of the same distribution",
+        "pure_noise_spearman_lo": "lower quantile (config.hardware_noise_band_quantiles[0] percent) of the Spearman of a pure-noise output against this instance's own exact average at this tau, over config.hardware_noise_band_draws draws; a pure-noise output is config.hardware_shots shots of uniform random codes per circuit, converted and averaged like a measured output",
+        "reason": "why the cell was not simulated, with the estimate",
+        "route": "discriminant the router selects for the retained operator (D_bar or H)",
+        "shots": "shots per circuit",
+        "signal_above_band": "whether the raw cell carries signal: fidelity_ratio strictly above pure_noise_fidelity_hi, the upper edge of its own pure-noise band (one-sided; a value on the edge or below the band is not signal); null for mitigated and not simulated cells",
+        "spearman_masked_classes": "Spearman over the class probabilities (layer copies summed) of the masked classes; null with fewer than two",
+        "spearman_supra": "Spearman against the exact time average over the R supra-nodes",
+        "spent_seconds": "simulation seconds already spent on the instance when the cell was declined",
+        "status": "'not simulated: resource budget' for a cell that was not simulated; empty otherwise",
+        "tau": "recorded steps averaged",
+        "transpiler_seed": "transpiler seed",
+        "tv": "total variation to the exact time average",
+        "tv_uniform": "total variation between uniform and the exact time average",
+        "two_qubit_sum": "two-qubit gates summed over the circuits t < tau",
+        "wall_seconds": "wall seconds the cell took to simulate (transpilation to the simulator basis included)"
+      },
+      "n_rows": 26,
+      "path": "results/outputs/results/hmeq/EC_noise_grid.csv",
+      "scope": "hmeq",
+      "source_stage": "06_hardware",
+      "undocumented": []
+    },
+    "EC_statevector": {
+      "absent": [
+        "reason",
+        "estimated_angle_bytes",
+        "estimated_statevector_bytes"
+      ],
+      "columns": {
+        "R": "supra-nodes of the full lumped operator",
+        "T": "steps simulated",
+        "budget_seconds": "wall budget of the rung",
+        "dataset": "dataset name",
+        "logical_qubits": "logical qubits 2 m",
+        "m": "register width",
+        "max_abs_error": "max |circuit source probability - NumPy lumped walk| over steps",
+        "probe_seconds": "wall seconds of the two-step probe",
+        "status": "ran, or not attempted",
+        "wall_seconds": "wall seconds of the run"
+      },
+      "n_rows": 1,
+      "path": "results/outputs/results/hmeq/EC_statevector.csv",
+      "scope": "hmeq",
+      "source_stage": "06_hardware",
+      "undocumented": []
+    },
+    "T6_hardware": {
+      "absent": [],
+      "columns": {
+        "arm": "exact, noiseless_shots, aer_noise_model or fake_marrakesh",
+        "arm_key": "short arm key used by the number map",
+        "dataset": "dataset name",
+        "depth_max": "maximal transpiled depth",
+        "fr": "fidelity ratio 1 - TV / TV_uniform",
+        "padding": "mean measured mass on padding codes",
+        "qpu_kind": "'estimated' for every simulated arm; 'none' for the exact row",
+        "qpu_seconds": "estimated QPU seconds",
+        "rho": "Spearman against the exact time average over the R supra-nodes",
+        "rho_masked": "Spearman over the class probabilities of the masked classes (null when fewer than two)",
+        "rho_masked_note": "'single group' when the masked-class Spearman is undefined",
+        "shots": "shots per circuit",
+        "tv": "total variation to the exact time average",
+        "tv_uniform": "total variation between uniform and exact",
+        "two_qubit_sum": "summed two-qubit gates"
+      },
+      "n_rows": 4,
+      "path": "results/outputs/results/hmeq/T6_hardware.csv",
+      "scope": "hmeq",
+      "source_stage": "06_hardware",
+      "undocumented": []
+    },
+    "T6_hardware_header": {
+      "absent": [],
+      "columns": {
+        "dataset": "dataset name",
+        "flag": "selection flag (empty, or 'cannot rank test borrowers')",
+        "hw_2q": "summed two-qubit gates over the per-time circuits",
+        "hw_R": "supra-nodes of the instance",
+        "hw_backend": "the calibration snapshot every simulated arm reads (a fake backend; nothing ran on hardware)",
+        "hw_borrowers": "borrowers the instance covers",
+        "hw_calibration_sets": "distinct measured-qubit tuples among the selected cell's circuits: readout calibration sets used (per circuit)",
+        "hw_date": "calibration date of that snapshot",
+        "hw_depth": "maximal transpiled depth over the per-time circuits",
+        "hw_k": "classes of the retained instance",
+        "hw_m": "register width",
+        "hw_qpu_s": "estimated QPU seconds of the selected cell (shots x (depth x gate time + measurement + repetition delay))",
+        "hw_rankable_borrowers": "borrowers that instance covers",
+        "hw_rankable_fr": "largest raw fake_marrakesh fidelity ratio of that instance over its simulated cells at tau >= hardware_min_tau (null when none was simulated)",
+        "hw_rankable_k": "classes of the first instance able to rank test borrowers: the smallest k that retains two or more masked classes (null when no instance does)",
+        "hw_rankable_m": "register width of that instance",
+        "hw_rankable_signal": "whether that cell carries signal: its fidelity ratio is strictly above the upper edge of its own pure-noise band",
+        "hw_route": "discriminant the router selects for the retained operator against its member-level operator (D_bar or H)",
+        "hw_survival": "conservative predicted survival probability, min over the circuits",
+        "hw_tau": "recorded steps of the selected cell",
+        "hw_tv_uniform": "total variation between the uniform distribution and the exact time average",
+        "n_masked_groups": "distinct masked classes the instance retains",
+        "noise_k_band": "entry point over instances: the smallest number of classes k such that neither it nor any larger evaluated k carries signal in the raw fake_marrakesh output; each k is judged at its longest simulated walk (the largest tau >= hardware_min_tau) and signal means a fidelity ratio strictly above the upper edge of its own pure-noise band; 'none' when no evaluated k satisfies it",
+        "noise_k_band_aer_noise_model": "the same entry point for the aer_noise_model arm",
+        "noise_k_band_fake_marrakesh": "the same as noise_k_band, named by arm",
+        "noise_tau_band": "entry point over steps, for the selected instance: the first tau >= hardware_min_tau at which its raw fake_marrakesh cell carries no signal, or '> <tau>' (its largest simulated tau) when every one does; 'not evaluated' without a simulated cell",
+        "noise_tau_band_aer_noise_model": "the same first tau for the aer_noise_model arm",
+        "noise_tau_band_fake_marrakesh": "the same as noise_tau_band, named by arm"
+      },
+      "n_rows": 1,
+      "path": "results/outputs/results/hmeq/T6_hardware_header.csv",
+      "scope": "hmeq",
+      "source_stage": "06_hardware",
+      "undocumented": []
+    }
+  },
+  "versions": {
+    "matplotlib": "3.10.9",
+    "nbclient": "0.10.4",
+    "nbformat": "5.10.4",
+    "numpy": "2.4.2",
+    "pandas": "3.0.0",
+    "polars": "1.37.1",
+    "pyarrow": "24.0.0",
+    "python": "3.12.13",
+    "qiskit": "2.5.0",
+    "qiskit-aer": "0.17.2",
+    "qiskit-ibm-runtime": "0.47.0",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.0",
+    "threadpoolctl": "3.6.0",
+    "xgboost": "3.2.0"
+  },
+  "wall_seconds": 82.657
+}
